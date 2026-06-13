@@ -159,7 +159,7 @@ export default function Home() {
                   "/images/heritage/jyotiba-temple-kolhapur.webp",
                   "/images/heritage/sahyadri-monsoon-gaur-kolhapur.webp"
                 ]} 
-                interval={2000}
+                interval={3000}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none z-10"></div>
             </div>
