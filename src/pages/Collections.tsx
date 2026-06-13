@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import { ImageSlider } from "@/components/ImageSlider";
+
 import categoriesData from "@/data/categories.json";
 
 export default function Collections() {
