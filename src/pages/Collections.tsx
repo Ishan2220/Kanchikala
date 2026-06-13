@@ -20,7 +20,7 @@ export default function Collections() {
         {/* Page Header */}
         <div className="text-center mb-24">
           <span className="text-[#D4AF37] text-sm uppercase tracking-[0.3em] font-medium mb-4 block">Our Masterpieces</span>
-          <h1 className="font-serif text-5xl md:text-7xl uppercase tracking-widest mb-6">Collections</h1>
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-7xl uppercase tracking-widest mb-6 break-words">Collections</h1>
           <div className="w-16 h-[1px] bg-[#D4AF37] mx-auto mb-8"></div>
           <p className="text-gray-600 font-light leading-relaxed max-w-2xl mx-auto text-lg">
             A curation of India's finest handloom artistry. Every collection tells a story of royal heritage, meticulous craftsmanship, and timeless elegance.
@@ -36,11 +36,10 @@ export default function Collections() {
             >
               <div className="w-full md:w-1/2 aspect-[3/4] overflow-hidden group relative">
                 <Link to={`/${category.slug}`} className="relative block w-full h-full cursor-pointer">
-                  <ImageSlider 
-                    images={category.images || [category.coverImage]} 
-                    interval={2000} 
-                    hoverToPlay={true}
-                    className="group-hover:scale-105 transition-transform duration-1000"
+                  <img 
+                    src={category.coverImage} 
+                    alt={category.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
                   />
                 </Link>
               </div>

@@ -102,31 +102,47 @@ export function Header() {
               initial={{ x: "-100%" }}
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
-              transition={{ duration: 0.7, ease: [0.76, 0, 0.24, 1] }}
-              className="fixed top-0 left-0 bottom-0 w-[85vw] sm:w-[400px] bg-[#FEFCF8] z-[70] flex flex-col shadow-2xl"
+              transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+              className="fixed top-0 left-0 bottom-0 w-[85vw] sm:w-[450px] bg-[#FEFCF8] z-[70] flex flex-col shadow-[20px_0_40px_rgba(0,0,0,0.1)]"
             >
-              <div className="p-8 flex justify-between items-center border-b border-[#E8E5DF] bg-[#2C0F18]">
+              <div className="p-8 flex justify-between items-center bg-[#FEFCF8]">
                 <img 
                   src="/images/logo-couture.webp" 
                   alt="KanchiKala" 
-                  className="h-10 w-auto object-contain brightness-0 invert"
-                  style={{ filter: 'brightness(0) invert(1) sepia(1) hue-rotate(330deg) saturate(3) brightness(1.2)' }}
+                  className="h-10 w-auto object-contain"
                 />
                 <button 
                   onClick={() => setMobileMenuOpen(false)}
-                  className="p-2 text-white/70 hover:text-[#E7D6B6] transition-colors"
+                  className="p-2 text-black hover:text-[#D4AF37] transition-colors"
                 >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="18" y1="6" x2="6" y2="18"></line>
                     <line x1="6" y1="6" x2="18" y2="18"></line>
                   </svg>
                 </button>
               </div>
-              <div className="flex-1 overflow-y-auto py-12 px-8 flex flex-col gap-8">
-                <Link onClick={() => setMobileMenuOpen(false)} to="/" className="text-2xl tracking-widest uppercase font-serif hover:text-[#D4AF37] transition-colors">Home</Link>
-                <Link onClick={() => setMobileMenuOpen(false)} to="/collections" className="text-2xl tracking-widest uppercase font-serif hover:text-[#D4AF37] transition-colors">Collections</Link>
-                <a onClick={() => setMobileMenuOpen(false)} href="/#heritage" className="text-2xl tracking-widest uppercase font-serif hover:text-[#D4AF37] transition-colors">Our Story</a>
-                <a onClick={() => setMobileMenuOpen(false)} href="/#visit-store" className="text-2xl tracking-widest uppercase font-serif hover:text-[#D4AF37] transition-colors">Visit Store</a>
+              <div className="flex-1 overflow-y-auto py-8 px-10 flex flex-col justify-center gap-10">
+                <Link onClick={() => setMobileMenuOpen(false)} to="/" className="group flex items-center gap-4">
+                  <span className="text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity text-sm font-medium">01</span>
+                  <span className="text-3xl sm:text-4xl tracking-widest uppercase font-serif text-[#2A2A2A] group-hover:text-[#D4AF37] transition-colors">Home</span>
+                </Link>
+                <Link onClick={() => setMobileMenuOpen(false)} to="/collections" className="group flex items-center gap-4">
+                  <span className="text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity text-sm font-medium">02</span>
+                  <span className="text-3xl sm:text-4xl tracking-widest uppercase font-serif text-[#2A2A2A] group-hover:text-[#D4AF37] transition-colors">Collections</span>
+                </Link>
+                <a onClick={() => setMobileMenuOpen(false)} href="/#heritage" className="group flex items-center gap-4">
+                  <span className="text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity text-sm font-medium">03</span>
+                  <span className="text-3xl sm:text-4xl tracking-widest uppercase font-serif text-[#2A2A2A] group-hover:text-[#D4AF37] transition-colors">Our Story</span>
+                </a>
+                <a onClick={() => setMobileMenuOpen(false)} href="/#visit-store" className="group flex items-center gap-4">
+                  <span className="text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity text-sm font-medium">04</span>
+                  <span className="text-3xl sm:text-4xl tracking-widest uppercase font-serif text-[#2A2A2A] group-hover:text-[#D4AF37] transition-colors">Visit Store</span>
+                </a>
+              </div>
+              <div className="p-10 border-t border-[#E8E5DF] bg-[#F5F5F0]">
+                <p className="text-xs tracking-widest uppercase text-gray-500 mb-2">Contact Us</p>
+                <p className="text-sm font-serif text-[#2A2A2A] mb-1">+91 98765 43210</p>
+                <p className="text-sm font-serif text-[#2A2A2A]">hello@kanchikala.com</p>
               </div>
             </motion.div>
           </>
