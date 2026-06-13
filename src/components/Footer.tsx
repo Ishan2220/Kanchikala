@@ -14,7 +14,7 @@ export function Footer() {
           <div className="lg:col-span-5 flex flex-col items-center lg:items-start text-center lg:text-left">
             <Link to="/" className="inline-block mb-8">
               <img 
-                src="/images/logo-couture.webp" 
+                src="/images/logo.png" 
                 alt="KanchiKala" 
                 className="h-20 sm:h-24 w-auto object-contain brightness-0 invert opacity-90 transition-opacity hover:opacity-100"
                 style={{ filter: 'brightness(0) invert(1) sepia(1) hue-rotate(330deg) saturate(3) brightness(1.2)' }}
