@@ -24,7 +24,7 @@ export default function Home() {
               >
                 <div className="flex justify-center md:justify-start mb-6">
                 <img 
-                  src="/images/logo.png" 
+                  src="/images/logo.webp" 
                   alt="KanchiKala" 
                   className="h-28 md:h-40 lg:h-64 w-auto object-contain drop-shadow-2xl"
                 />
