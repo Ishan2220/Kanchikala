@@ -16,8 +16,7 @@ export function Footer() {
               <img 
                 src="/images/logo.webp" 
                 alt="KanchiKala" 
-                className="h-20 sm:h-24 w-auto object-contain brightness-0 invert opacity-90 transition-opacity hover:opacity-100"
-                style={{ filter: 'brightness(0) invert(1) sepia(1) hue-rotate(330deg) saturate(3) brightness(1.2)' }}
+                className="h-20 sm:h-24 w-auto object-contain transition-opacity hover:opacity-80"
               />
             </Link>
             <p className="text-gray-400 text-sm sm:text-base leading-loose max-w-md font-light mb-8">

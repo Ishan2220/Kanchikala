@@ -68,7 +68,7 @@ export function Header() {
               <img 
                 src="/images/logo.webp" 
                 alt="KanchiKala" 
-                className="h-14 sm:h-16 md:h-24 lg:h-32 w-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+                className="h-14 sm:h-16 md:h-24 lg:h-32 w-auto object-contain scale-150 sm:scale-100 origin-center transition-transform duration-500 group-hover:scale-105"
               />
             </Link>
 
@@ -109,7 +109,7 @@ export function Header() {
                 <img 
                   src="/images/logo.webp" 
                   alt="KanchiKala" 
-                  className="h-10 w-auto object-contain"
+                  className="h-10 w-auto object-contain scale-150 origin-left sm:scale-100"
                 />
                 <button 
                   onClick={() => setMobileMenuOpen(false)}
