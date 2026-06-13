@@ -11,7 +11,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
   const isHome = location.pathname === "/";
-  const isSolid = scrolled || !isHome;
+  const isHome = location.pathname === "/";
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -43,11 +43,7 @@ export function Header() {
       <header 
         className={`fixed top-0 w-full z-50 transition-all duration-500 ease-in-out ${
           hidden ? "-translate-y-full" : "translate-y-0"
-        } ${
-          isSolid 
-            ? "bg-[#FEFCF8] border-b border-[#E8E5DF] py-4 shadow-sm" 
-            : "bg-transparent py-6"
-        }`}
+        } bg-[#FEFCF8] border-b border-[#E8E5DF] py-4 shadow-sm`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
@@ -56,7 +52,7 @@ export function Header() {
             <div className="flex-1 flex justify-start">
               <button 
                 onClick={() => setMobileMenuOpen(true)}
-                className={`p-2 transition-colors duration-300 ${isSolid ? 'text-black hover:text-[#D4AF37]' : 'text-white hover:text-[#D4AF37]'}`}
+                className="p-2 transition-colors duration-300 text-black hover:text-[#D4AF37]"
                 aria-label="Menu"
               >
                 <Menu className="w-6 h-6" strokeWidth={1.5} />
@@ -75,7 +71,7 @@ export function Header() {
             {/* Right: Search */}
             <div className="flex-1 flex justify-end">
               <button 
-                className={`p-2 transition-colors duration-300 ${isSolid ? 'text-black hover:text-[#D4AF37]' : 'text-white hover:text-[#D4AF37]'}`}
+                className="p-2 transition-colors duration-300 text-black hover:text-[#D4AF37]"
                 aria-label="Search"
               >
                 <Search className="w-5 h-5" strokeWidth={1.5} />

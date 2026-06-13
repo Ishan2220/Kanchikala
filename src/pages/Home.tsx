@@ -22,13 +22,7 @@ export default function Home() {
                 transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
                 className="mb-8"
               >
-                <div className="flex justify-center md:justify-start mb-6">
-                <img 
-                  src="/images/logo.webp" 
-                  alt="KanchiKala" 
-                  className="h-28 md:h-40 lg:h-64 w-auto object-contain drop-shadow-2xl"
-                />
-              </div>
+
                 <p className="font-serif text-xl md:text-2xl text-gray-800 italic font-light tracking-wide text-center md:text-left">
                   Celebrating India's Finest Weaves
                 </p>
@@ -142,10 +136,10 @@ export default function Home() {
               <h2 className="font-serif text-4xl md:text-6xl uppercase tracking-widest mb-8 leading-tight">From The Heart of Kolhapur</h2>
               <div className="w-12 h-[1px] bg-black mb-8"></div>
               <p className="text-gray-600 font-light leading-relaxed mb-6 text-lg">
-                Inspired by the grandeur of the New Palace and the timeless elegance of Shalini Palace, KanchiKala Sarees brings you an unparalleled curation of authentic handloom weaves.
+                Rooted in the royal city of Kolhapur, KanchiKala Sarees brings together the most exquisite handloom sarees from every corner of India under one roof.
               </p>
               <p className="text-gray-600 font-light leading-relaxed text-lg">
-                Our journey echoes the legacy of Chhatrapati Shahu Maharaj, celebrating master artisans whose centuries-old craftsmanship is woven into every magnificent thread of pure silk and gold zari.
+                From Banarasi silks of the North to Kanjeevarams of the South, we curate India's finest artisanal heritage so you can experience the nation's diverse weaving traditions in a single destination.
               </p>
             </div>
             <div className="w-full md:w-7/12 relative aspect-[4/5] shadow-2xl overflow-hidden group">
@@ -209,8 +203,9 @@ export default function Home() {
                     <h4 className="font-serif text-xl tracking-wider uppercase mb-2">Location</h4>
                     <p className="text-gray-600 font-light leading-relaxed">
                       KanchiKala Sarees<br/>
+                      7th Lane, Rajarampuri<br/>
                       Kolhapur, Maharashtra<br/>
-                      India - 416001
+                      India - 416008
                     </p>
                   </div>
                 </div>

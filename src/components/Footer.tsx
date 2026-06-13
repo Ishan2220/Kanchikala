@@ -61,7 +61,7 @@ export function Footer() {
               <ul className="space-y-5 text-sm font-light text-gray-400">
                 <li className="flex items-start justify-center sm:justify-start gap-3">
                   <MapPin className="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5" strokeWidth={1} />
-                  <span className="leading-relaxed">Kolhapur, Maharashtra<br/>India - 416001</span>
+                  <span className="leading-relaxed">7th Lane, Rajarampuri<br/>Kolhapur, Maharashtra<br/>India - 416008</span>
                 </li>
                 <li className="flex items-center justify-center sm:justify-start gap-3">
                   <Phone className="w-5 h-5 text-[#D4AF37] shrink-0" strokeWidth={1} />
