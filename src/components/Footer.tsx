@@ -9,7 +9,7 @@ export function Footer() {
           <div className="md:col-span-1">
             <Link to="/" className="inline-block mb-6">
               <img 
-                src="/images/logo-couture.png" 
+                src="/images/logo-couture.webp" 
                 alt="KanchiKala" 
                 className="h-16 w-auto object-contain brightness-0 invert transition-transform hover:scale-105"
                 style={{ filter: 'brightness(0) invert(1) sepia(1) hue-rotate(330deg) saturate(3) brightness(1.2)' }}

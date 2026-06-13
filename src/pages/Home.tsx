@@ -24,7 +24,7 @@ export default function Home() {
               >
                 <div className="flex justify-center md:justify-start mb-6">
                 <img 
-                  src="/images/logo-couture.png" 
+                  src="/images/logo-couture.webp" 
                   alt="KanchiKala" 
                   className="h-28 md:h-40 lg:h-64 w-auto object-contain drop-shadow-2xl"
                 />
@@ -67,7 +67,7 @@ export default function Home() {
               >
                 <div className="absolute inset-0 bg-[#E8E5DF] animate-pulse"></div>
                 <img
-                  src="/images/model.jpg"
+                  src="/images/model.webp"
                   alt="KanchiKala Luxury Campaign"
                   className="w-full h-full object-cover object-center absolute inset-0 z-10"
                 />
@@ -151,13 +151,13 @@ export default function Home() {
             <div className="w-full md:w-7/12 relative aspect-[4/5] shadow-2xl overflow-hidden group">
               <ImageSlider 
                 images={[
-                  "/images/heritage/mahalaxmi-temple-kolhapur.png",
-                  "/images/heritage/bhavani-mandap-kolhapur.png",
-                  "/images/heritage/new-palace-museum-kolhapur.png",
-                  "/images/heritage/rankala-lake-shalini-palace.png",
-                  "/images/heritage/panhala-fort-kolhapur.png",
-                  "/images/heritage/jyotiba-temple-kolhapur.png",
-                  "/images/heritage/sahyadri-monsoon-gaur-kolhapur.png"
+                  "/images/heritage/mahalaxmi-temple-kolhapur.webp",
+                  "/images/heritage/bhavani-mandap-kolhapur.webp",
+                  "/images/heritage/new-palace-museum-kolhapur.webp",
+                  "/images/heritage/rankala-lake-shalini-palace.webp",
+                  "/images/heritage/panhala-fort-kolhapur.webp",
+                  "/images/heritage/jyotiba-temple-kolhapur.webp",
+                  "/images/heritage/sahyadri-monsoon-gaur-kolhapur.webp"
                 ]} 
                 interval={2000}
               />
@@ -192,7 +192,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-16">
             <div className="w-full md:w-1/2 relative aspect-square md:aspect-[4/5] shadow-xl">
                <img
-                src="/images/interior-wall.jpg"
+                src="/images/interior-wall.webp"
                 alt="KanchiKala Boutique Interior"
                 loading="lazy"
                 className="w-full h-full object-cover"

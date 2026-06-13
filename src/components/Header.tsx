@@ -66,7 +66,7 @@ export function Header() {
             {/* Center: Logo */}
             <Link to="/" className="flex-1 flex justify-center items-center group py-2">
               <img 
-                src="/images/logo-couture.png" 
+                src="/images/logo-couture.webp" 
                 alt="KanchiKala" 
                 className="h-14 sm:h-16 md:h-24 lg:h-32 w-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
               />
@@ -107,7 +107,7 @@ export function Header() {
             >
               <div className="p-8 flex justify-between items-center border-b border-[#E8E5DF] bg-[#2C0F18]">
                 <img 
-                  src="/images/logo-couture.png" 
+                  src="/images/logo-couture.webp" 
                   alt="KanchiKala" 
                   className="h-10 w-auto object-contain brightness-0 invert"
                   style={{ filter: 'brightness(0) invert(1) sepia(1) hue-rotate(330deg) saturate(3) brightness(1.2)' }}
