@@ -1,0 +1,158 @@
+[
+  {
+    "id": "banarasi",
+    "name": "Banarasi Sarees",
+    "slug": "banarasi-sarees",
+    "description": "Rich brocade silk woven with Mughal-inspired gold zari motifs from the holy city of Varanasi. Each piece is a masterpiece of Indian handloom heritage, taking weeks to perfect by master artisans.",
+    "shortDescription": "Mughal-inspired gold zari motifs on pure silk from Varanasi.",
+    "coverImage": "/images/categories/banarasi/1.webp",
+    "images": [
+      "/images/categories/banarasi/1.webp",
+      "/images/categories/banarasi/2.webp",
+      "/images/categories/banarasi/3.webp"
+    ]
+  },
+  {
+    "id": "kanjeevaram",
+    "name": "Kanjeevaram Sarees",
+    "slug": "kanjeevaram-sarees",
+    "description": "The queen of South Indian silks — bold temple borders and lustrous jewel-toned pure mulberry silk.",
+    "shortDescription": "Bold temple borders and lustrous pure mulberry silk.",
+    "coverImage": "/images/categories/kanjeevaram/1.webp",
+    "images": [
+      "/images/categories/kanjeevaram/1.webp",
+      "/images/categories/kanjeevaram/2.webp",
+      "/images/categories/kanjeevaram/3.webp"
+    ]
+  },
+  {
+    "id": "pochampally",
+    "name": "Pochampally Ikkat",
+    "slug": "pochampally-ikkat",
+    "description": "Mesmerizing geometric patterns born from the ancient resist-dye weaving technique of Telangana.",
+    "shortDescription": "Ancient resist-dye weaving with geometric patterns.",
+    "coverImage": "/images/categories/pochampally/1.webp",
+    "images": [
+      "/images/categories/pochampally/1.webp",
+      "/images/categories/pochampally/2.webp",
+      "/images/categories/pochampally/3.webp"
+    ]
+  },
+  {
+    "id": "bandhani",
+    "name": "Bandhani Sarees",
+    "slug": "bandhani-sarees",
+    "description": "A thousand tiny knots blooming into vibrant patterns — the timeless tie-dye art of Rajasthan and Gujarat.",
+    "shortDescription": "The timeless tie-dye art of Rajasthan and Gujarat.",
+    "coverImage": "/images/categories/bandhani/1.webp",
+    "images": [
+      "/images/categories/bandhani/1.webp",
+      "/images/categories/bandhani/2.webp",
+      "/images/categories/bandhani/3.webp"
+    ]
+  },
+  {
+    "id": "leheriya",
+    "name": "Leheriya Sarees",
+    "slug": "leheriya-sarees",
+    "description": "Waves of colour cascading diagonally — Rajasthan's joyful resist-dye craft in soft pastel hues.",
+    "shortDescription": "Rajasthan's joyful resist-dye craft in pastel hues.",
+    "coverImage": "/images/categories/leheriya/1.webp",
+    "images": [
+      "/images/categories/leheriya/1.webp",
+      "/images/categories/leheriya/2.webp",
+      "/images/categories/leheriya/3.webp"
+    ]
+  },
+  {
+    "id": "paithani",
+    "name": "Paithani Sarees",
+    "slug": "paithani-sarees",
+    "description": "Maharashtra's crown jewel — handwoven silk adorned with dancing peacocks and oblique square borders.",
+    "shortDescription": "Handwoven silk adorned with dancing peacocks.",
+    "coverImage": "/images/categories/paithani/1.webp",
+    "images": [
+      "/images/categories/paithani/1.webp",
+      "/images/categories/paithani/2.webp",
+      "/images/categories/paithani/3.webp"
+    ]
+  },
+  {
+    "id": "chanderi",
+    "name": "Chanderi Sarees",
+    "slug": "chanderi-sarees",
+    "description": "Ethereal and light as air — sheer silk-cotton fabric from Madhya Pradesh with delicate golden zari borders.",
+    "shortDescription": "Sheer silk-cotton fabric with delicate golden zari.",
+    "coverImage": "/images/categories/chanderi/1.webp",
+    "images": [
+      "/images/categories/chanderi/1.webp",
+      "/images/categories/chanderi/2.webp",
+      "/images/categories/chanderi/3.webp"
+    ]
+  },
+  {
+    "id": "maheshwari",
+    "name": "Maheshwari Sarees",
+    "slug": "maheshwari-sarees",
+    "description": "A royal patronage since the Holkar dynasty — distinctive reversible borders in cotton-silk perfection.",
+    "shortDescription": "Distinctive reversible borders in cotton-silk.",
+    "coverImage": "/images/categories/maheshwari/1.webp",
+    "images": [
+      "/images/categories/maheshwari/1.webp",
+      "/images/categories/maheshwari/2.webp",
+      "/images/categories/maheshwari/3.webp"
+    ]
+  },
+  {
+    "id": "muga-silk",
+    "name": "Muga Silk Sarees",
+    "slug": "muga-silk-sarees",
+    "description": "Assam's golden treasure — the only naturally golden silk in the world, glowing brighter with every wash.",
+    "shortDescription": "Assam's naturally golden silk, growing brighter with age.",
+    "coverImage": "/images/categories/muga-silk/1.webp",
+    "images": [
+      "/images/categories/muga-silk/1.webp",
+      "/images/categories/muga-silk/2.webp",
+      "/images/categories/muga-silk/3.webp"
+    ]
+  },
+  {
+    "id": "dharmavaram",
+    "name": "Dharmavaram Sarees",
+    "slug": "dharmavaram-sarees",
+    "description": "Andhra Pradesh's bridal favourite — rich heavy silk with dramatically contrasting pallu and wide temple borders.",
+    "shortDescription": "Rich heavy silk with dramatically contrasting pallus.",
+    "coverImage": "/images/categories/dharmavaram/1.webp",
+    "images": [
+      "/images/categories/dharmavaram/1.webp",
+      "/images/categories/dharmavaram/2.webp",
+      "/images/categories/dharmavaram/3.webp"
+    ]
+  },
+  {
+    "id": "georgette",
+    "name": "Georgette Sarees",
+    "slug": "georgette-sarees",
+    "description": "Contemporary elegance in flowing lightweight fabric — modern prints and delicate embellishments for the new-age woman.",
+    "shortDescription": "Contemporary elegance in flowing lightweight fabric.",
+    "coverImage": "/images/categories/georgette/1.webp",
+    "images": [
+      "/images/categories/georgette/1.webp",
+      "/images/categories/georgette/2.webp",
+      "/images/categories/georgette/3.webp"
+    ]
+  },
+  {
+    "id": "chiffon",
+    "name": "Chiffon Sarees",
+    "slug": "chiffon-sarees",
+    "description": "Ultra-lightweight, sheer, and gracefully flowing. Perfect for evening wear and elegant minimalist looks.",
+    "shortDescription": "Ultra-lightweight, sheer, and gracefully flowing.",
+    "coverImage": "/images/categories/chiffon/1.webp",
+    "images": [
+      "/images/categories/chiffon/1.webp",
+      "/images/categories/chiffon/2.webp",
+      "/images/categories/chiffon/3.webp"
+    ]
+  }
+]

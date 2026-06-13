@@ -1,0 +1,876 @@
+[
+  {
+    "id": "banarasi-1",
+    "categoryId": "banarasi",
+    "name": "Royal Crimson Red Banarasi",
+    "slug": "royal-crimson-red-banarasi",
+    "fabric": "Pure Mulberry Silk",
+    "description": "A breathtaking royal crimson red banarasi adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Banarasi Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Crimson Red",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/banarasi/1.webp",
+      "/images/categories/banarasi/2.webp",
+      "/images/categories/banarasi/3.webp"
+    ]
+  },
+  {
+    "id": "banarasi-2",
+    "categoryId": "banarasi",
+    "name": "Classic Emerald Green Banarasi",
+    "slug": "classic-emerald-green-banarasi",
+    "fabric": "Pure Mulberry Silk",
+    "description": "A breathtaking classic emerald green banarasi adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Banarasi Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Emerald Green",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/banarasi/1.webp",
+      "/images/categories/banarasi/2.webp",
+      "/images/categories/banarasi/3.webp"
+    ]
+  },
+  {
+    "id": "banarasi-3",
+    "categoryId": "banarasi",
+    "name": "Vibrant Midnight Blue Banarasi",
+    "slug": "vibrant-midnight-blue-banarasi",
+    "fabric": "Pure Mulberry Silk",
+    "description": "A breathtaking vibrant midnight blue banarasi adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Banarasi Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Midnight Blue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/banarasi/1.webp",
+      "/images/categories/banarasi/2.webp",
+      "/images/categories/banarasi/3.webp"
+    ]
+  },
+  {
+    "id": "banarasi-4",
+    "categoryId": "banarasi",
+    "name": "Elegant Golden Tissue Banarasi",
+    "slug": "elegant-golden-tissue-banarasi",
+    "fabric": "Pure Mulberry Silk",
+    "description": "A breathtaking elegant golden tissue banarasi adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Banarasi Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Golden Tissue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/banarasi/1.webp",
+      "/images/categories/banarasi/2.webp",
+      "/images/categories/banarasi/3.webp"
+    ]
+  },
+  {
+    "id": "kanjeevaram-1",
+    "categoryId": "kanjeevaram",
+    "name": "Royal Crimson Red Kanjeevaram",
+    "slug": "royal-crimson-red-kanjeevaram",
+    "fabric": "Pure Mulberry Silk",
+    "description": "A breathtaking royal crimson red kanjeevaram adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Kanjeevaram Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Crimson Red",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/kanjeevaram/1.webp",
+      "/images/categories/kanjeevaram/2.webp",
+      "/images/categories/kanjeevaram/3.webp"
+    ]
+  },
+  {
+    "id": "kanjeevaram-2",
+    "categoryId": "kanjeevaram",
+    "name": "Classic Emerald Green Kanjeevaram",
+    "slug": "classic-emerald-green-kanjeevaram",
+    "fabric": "Pure Mulberry Silk",
+    "description": "A breathtaking classic emerald green kanjeevaram adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Kanjeevaram Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Emerald Green",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/kanjeevaram/1.webp",
+      "/images/categories/kanjeevaram/2.webp",
+      "/images/categories/kanjeevaram/3.webp"
+    ]
+  },
+  {
+    "id": "kanjeevaram-3",
+    "categoryId": "kanjeevaram",
+    "name": "Vibrant Midnight Blue Kanjeevaram",
+    "slug": "vibrant-midnight-blue-kanjeevaram",
+    "fabric": "Pure Mulberry Silk",
+    "description": "A breathtaking vibrant midnight blue kanjeevaram adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Kanjeevaram Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Midnight Blue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/kanjeevaram/1.webp",
+      "/images/categories/kanjeevaram/2.webp",
+      "/images/categories/kanjeevaram/3.webp"
+    ]
+  },
+  {
+    "id": "kanjeevaram-4",
+    "categoryId": "kanjeevaram",
+    "name": "Elegant Golden Tissue Kanjeevaram",
+    "slug": "elegant-golden-tissue-kanjeevaram",
+    "fabric": "Pure Mulberry Silk",
+    "description": "A breathtaking elegant golden tissue kanjeevaram adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Kanjeevaram Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Golden Tissue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/kanjeevaram/1.webp",
+      "/images/categories/kanjeevaram/2.webp",
+      "/images/categories/kanjeevaram/3.webp"
+    ]
+  },
+  {
+    "id": "pochampally-1",
+    "categoryId": "pochampally",
+    "name": "Royal Crimson Red Pochampally",
+    "slug": "royal-crimson-red-pochampally",
+    "fabric": "Pure Silk Ikkat",
+    "description": "A breathtaking royal crimson red pochampally adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Pochampally Ikkat",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Crimson Red",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/pochampally/1.webp",
+      "/images/categories/pochampally/2.webp",
+      "/images/categories/pochampally/3.webp"
+    ]
+  },
+  {
+    "id": "pochampally-2",
+    "categoryId": "pochampally",
+    "name": "Classic Emerald Green Pochampally",
+    "slug": "classic-emerald-green-pochampally",
+    "fabric": "Pure Silk Ikkat",
+    "description": "A breathtaking classic emerald green pochampally adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Pochampally Ikkat",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Emerald Green",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/pochampally/1.webp",
+      "/images/categories/pochampally/2.webp",
+      "/images/categories/pochampally/3.webp"
+    ]
+  },
+  {
+    "id": "pochampally-3",
+    "categoryId": "pochampally",
+    "name": "Vibrant Midnight Blue Pochampally",
+    "slug": "vibrant-midnight-blue-pochampally",
+    "fabric": "Pure Silk Ikkat",
+    "description": "A breathtaking vibrant midnight blue pochampally adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Pochampally Ikkat",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Midnight Blue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/pochampally/1.webp",
+      "/images/categories/pochampally/2.webp",
+      "/images/categories/pochampally/3.webp"
+    ]
+  },
+  {
+    "id": "pochampally-4",
+    "categoryId": "pochampally",
+    "name": "Elegant Golden Tissue Pochampally",
+    "slug": "elegant-golden-tissue-pochampally",
+    "fabric": "Pure Silk Ikkat",
+    "description": "A breathtaking elegant golden tissue pochampally adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Pochampally Ikkat",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Golden Tissue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/pochampally/1.webp",
+      "/images/categories/pochampally/2.webp",
+      "/images/categories/pochampally/3.webp"
+    ]
+  },
+  {
+    "id": "bandhani-1",
+    "categoryId": "bandhani",
+    "name": "Royal Crimson Red Bandhani",
+    "slug": "royal-crimson-red-bandhani",
+    "fabric": "Georgette / Silk",
+    "description": "A breathtaking royal crimson red bandhani adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Bandhani Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Crimson Red",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/bandhani/1.webp",
+      "/images/categories/bandhani/2.webp",
+      "/images/categories/bandhani/3.webp"
+    ]
+  },
+  {
+    "id": "bandhani-2",
+    "categoryId": "bandhani",
+    "name": "Classic Emerald Green Bandhani",
+    "slug": "classic-emerald-green-bandhani",
+    "fabric": "Georgette / Silk",
+    "description": "A breathtaking classic emerald green bandhani adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Bandhani Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Emerald Green",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/bandhani/1.webp",
+      "/images/categories/bandhani/2.webp",
+      "/images/categories/bandhani/3.webp"
+    ]
+  },
+  {
+    "id": "bandhani-3",
+    "categoryId": "bandhani",
+    "name": "Vibrant Midnight Blue Bandhani",
+    "slug": "vibrant-midnight-blue-bandhani",
+    "fabric": "Georgette / Silk",
+    "description": "A breathtaking vibrant midnight blue bandhani adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Bandhani Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Midnight Blue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/bandhani/1.webp",
+      "/images/categories/bandhani/2.webp",
+      "/images/categories/bandhani/3.webp"
+    ]
+  },
+  {
+    "id": "bandhani-4",
+    "categoryId": "bandhani",
+    "name": "Elegant Golden Tissue Bandhani",
+    "slug": "elegant-golden-tissue-bandhani",
+    "fabric": "Georgette / Silk",
+    "description": "A breathtaking elegant golden tissue bandhani adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Bandhani Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Golden Tissue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/bandhani/1.webp",
+      "/images/categories/bandhani/2.webp",
+      "/images/categories/bandhani/3.webp"
+    ]
+  },
+  {
+    "id": "leheriya-1",
+    "categoryId": "leheriya",
+    "name": "Royal Crimson Red Leheriya",
+    "slug": "royal-crimson-red-leheriya",
+    "fabric": "Lightweight Chiffon",
+    "description": "A breathtaking royal crimson red leheriya adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Leheriya Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Crimson Red",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/leheriya/1.webp",
+      "/images/categories/leheriya/2.webp",
+      "/images/categories/leheriya/3.webp"
+    ]
+  },
+  {
+    "id": "leheriya-2",
+    "categoryId": "leheriya",
+    "name": "Classic Emerald Green Leheriya",
+    "slug": "classic-emerald-green-leheriya",
+    "fabric": "Lightweight Chiffon",
+    "description": "A breathtaking classic emerald green leheriya adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Leheriya Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Emerald Green",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/leheriya/1.webp",
+      "/images/categories/leheriya/2.webp",
+      "/images/categories/leheriya/3.webp"
+    ]
+  },
+  {
+    "id": "leheriya-3",
+    "categoryId": "leheriya",
+    "name": "Vibrant Midnight Blue Leheriya",
+    "slug": "vibrant-midnight-blue-leheriya",
+    "fabric": "Lightweight Chiffon",
+    "description": "A breathtaking vibrant midnight blue leheriya adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Leheriya Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Midnight Blue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/leheriya/1.webp",
+      "/images/categories/leheriya/2.webp",
+      "/images/categories/leheriya/3.webp"
+    ]
+  },
+  {
+    "id": "leheriya-4",
+    "categoryId": "leheriya",
+    "name": "Elegant Golden Tissue Leheriya",
+    "slug": "elegant-golden-tissue-leheriya",
+    "fabric": "Lightweight Chiffon",
+    "description": "A breathtaking elegant golden tissue leheriya adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Leheriya Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Golden Tissue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/leheriya/1.webp",
+      "/images/categories/leheriya/2.webp",
+      "/images/categories/leheriya/3.webp"
+    ]
+  },
+  {
+    "id": "paithani-1",
+    "categoryId": "paithani",
+    "name": "Royal Crimson Red Paithani",
+    "slug": "royal-crimson-red-paithani",
+    "fabric": "Pure Silk with Gold Zari",
+    "description": "A breathtaking royal crimson red paithani adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Paithani Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Crimson Red",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/paithani/1.webp",
+      "/images/categories/paithani/2.webp",
+      "/images/categories/paithani/3.webp"
+    ]
+  },
+  {
+    "id": "paithani-2",
+    "categoryId": "paithani",
+    "name": "Classic Emerald Green Paithani",
+    "slug": "classic-emerald-green-paithani",
+    "fabric": "Pure Silk with Gold Zari",
+    "description": "A breathtaking classic emerald green paithani adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Paithani Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Emerald Green",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/paithani/1.webp",
+      "/images/categories/paithani/2.webp",
+      "/images/categories/paithani/3.webp"
+    ]
+  },
+  {
+    "id": "paithani-3",
+    "categoryId": "paithani",
+    "name": "Vibrant Midnight Blue Paithani",
+    "slug": "vibrant-midnight-blue-paithani",
+    "fabric": "Pure Silk with Gold Zari",
+    "description": "A breathtaking vibrant midnight blue paithani adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Paithani Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Midnight Blue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/paithani/1.webp",
+      "/images/categories/paithani/2.webp",
+      "/images/categories/paithani/3.webp"
+    ]
+  },
+  {
+    "id": "paithani-4",
+    "categoryId": "paithani",
+    "name": "Elegant Golden Tissue Paithani",
+    "slug": "elegant-golden-tissue-paithani",
+    "fabric": "Pure Silk with Gold Zari",
+    "description": "A breathtaking elegant golden tissue paithani adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Paithani Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Golden Tissue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/paithani/1.webp",
+      "/images/categories/paithani/2.webp",
+      "/images/categories/paithani/3.webp"
+    ]
+  },
+  {
+    "id": "chanderi-1",
+    "categoryId": "chanderi",
+    "name": "Royal Crimson Red Chanderi",
+    "slug": "royal-crimson-red-chanderi",
+    "fabric": "Silk Cotton Blend",
+    "description": "A breathtaking royal crimson red chanderi adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Chanderi Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Crimson Red",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/chanderi/1.webp",
+      "/images/categories/chanderi/2.webp",
+      "/images/categories/chanderi/3.webp"
+    ]
+  },
+  {
+    "id": "chanderi-2",
+    "categoryId": "chanderi",
+    "name": "Classic Emerald Green Chanderi",
+    "slug": "classic-emerald-green-chanderi",
+    "fabric": "Silk Cotton Blend",
+    "description": "A breathtaking classic emerald green chanderi adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Chanderi Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Emerald Green",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/chanderi/1.webp",
+      "/images/categories/chanderi/2.webp",
+      "/images/categories/chanderi/3.webp"
+    ]
+  },
+  {
+    "id": "chanderi-3",
+    "categoryId": "chanderi",
+    "name": "Vibrant Midnight Blue Chanderi",
+    "slug": "vibrant-midnight-blue-chanderi",
+    "fabric": "Silk Cotton Blend",
+    "description": "A breathtaking vibrant midnight blue chanderi adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Chanderi Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Midnight Blue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/chanderi/1.webp",
+      "/images/categories/chanderi/2.webp",
+      "/images/categories/chanderi/3.webp"
+    ]
+  },
+  {
+    "id": "chanderi-4",
+    "categoryId": "chanderi",
+    "name": "Elegant Golden Tissue Chanderi",
+    "slug": "elegant-golden-tissue-chanderi",
+    "fabric": "Silk Cotton Blend",
+    "description": "A breathtaking elegant golden tissue chanderi adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Chanderi Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Golden Tissue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/chanderi/1.webp",
+      "/images/categories/chanderi/2.webp",
+      "/images/categories/chanderi/3.webp"
+    ]
+  },
+  {
+    "id": "maheshwari-1",
+    "categoryId": "maheshwari",
+    "name": "Royal Crimson Red Maheshwari",
+    "slug": "royal-crimson-red-maheshwari",
+    "fabric": "Cotton Silk",
+    "description": "A breathtaking royal crimson red maheshwari adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Maheshwari Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Crimson Red",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/maheshwari/1.webp",
+      "/images/categories/maheshwari/2.webp",
+      "/images/categories/maheshwari/3.webp"
+    ]
+  },
+  {
+    "id": "maheshwari-2",
+    "categoryId": "maheshwari",
+    "name": "Classic Emerald Green Maheshwari",
+    "slug": "classic-emerald-green-maheshwari",
+    "fabric": "Cotton Silk",
+    "description": "A breathtaking classic emerald green maheshwari adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Maheshwari Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Emerald Green",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/maheshwari/1.webp",
+      "/images/categories/maheshwari/2.webp",
+      "/images/categories/maheshwari/3.webp"
+    ]
+  },
+  {
+    "id": "maheshwari-3",
+    "categoryId": "maheshwari",
+    "name": "Vibrant Midnight Blue Maheshwari",
+    "slug": "vibrant-midnight-blue-maheshwari",
+    "fabric": "Cotton Silk",
+    "description": "A breathtaking vibrant midnight blue maheshwari adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Maheshwari Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Midnight Blue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/maheshwari/1.webp",
+      "/images/categories/maheshwari/2.webp",
+      "/images/categories/maheshwari/3.webp"
+    ]
+  },
+  {
+    "id": "maheshwari-4",
+    "categoryId": "maheshwari",
+    "name": "Elegant Golden Tissue Maheshwari",
+    "slug": "elegant-golden-tissue-maheshwari",
+    "fabric": "Cotton Silk",
+    "description": "A breathtaking elegant golden tissue maheshwari adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Maheshwari Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Golden Tissue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/maheshwari/1.webp",
+      "/images/categories/maheshwari/2.webp",
+      "/images/categories/maheshwari/3.webp"
+    ]
+  },
+  {
+    "id": "muga-silk-1",
+    "categoryId": "muga-silk",
+    "name": "Royal Crimson Red Muga",
+    "slug": "royal-crimson-red-muga",
+    "fabric": "Pure Muga Silk",
+    "description": "A breathtaking royal crimson red muga adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Muga Silk Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Crimson Red",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/muga-silk/1.webp",
+      "/images/categories/muga-silk/2.webp",
+      "/images/categories/muga-silk/3.webp"
+    ]
+  },
+  {
+    "id": "muga-silk-2",
+    "categoryId": "muga-silk",
+    "name": "Classic Emerald Green Muga",
+    "slug": "classic-emerald-green-muga",
+    "fabric": "Pure Muga Silk",
+    "description": "A breathtaking classic emerald green muga adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Muga Silk Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Emerald Green",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/muga-silk/1.webp",
+      "/images/categories/muga-silk/2.webp",
+      "/images/categories/muga-silk/3.webp"
+    ]
+  },
+  {
+    "id": "muga-silk-3",
+    "categoryId": "muga-silk",
+    "name": "Vibrant Midnight Blue Muga",
+    "slug": "vibrant-midnight-blue-muga",
+    "fabric": "Pure Muga Silk",
+    "description": "A breathtaking vibrant midnight blue muga adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Muga Silk Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Midnight Blue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/muga-silk/1.webp",
+      "/images/categories/muga-silk/2.webp",
+      "/images/categories/muga-silk/3.webp"
+    ]
+  },
+  {
+    "id": "muga-silk-4",
+    "categoryId": "muga-silk",
+    "name": "Elegant Golden Tissue Muga",
+    "slug": "elegant-golden-tissue-muga",
+    "fabric": "Pure Muga Silk",
+    "description": "A breathtaking elegant golden tissue muga adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Muga Silk Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Golden Tissue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/muga-silk/1.webp",
+      "/images/categories/muga-silk/2.webp",
+      "/images/categories/muga-silk/3.webp"
+    ]
+  },
+  {
+    "id": "dharmavaram-1",
+    "categoryId": "dharmavaram",
+    "name": "Royal Crimson Red Dharmavaram",
+    "slug": "royal-crimson-red-dharmavaram",
+    "fabric": "Heavy Silk",
+    "description": "A breathtaking royal crimson red dharmavaram adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Dharmavaram Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Crimson Red",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/dharmavaram/1.webp",
+      "/images/categories/dharmavaram/2.webp",
+      "/images/categories/dharmavaram/3.webp"
+    ]
+  },
+  {
+    "id": "dharmavaram-2",
+    "categoryId": "dharmavaram",
+    "name": "Classic Emerald Green Dharmavaram",
+    "slug": "classic-emerald-green-dharmavaram",
+    "fabric": "Heavy Silk",
+    "description": "A breathtaking classic emerald green dharmavaram adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Dharmavaram Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Emerald Green",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/dharmavaram/1.webp",
+      "/images/categories/dharmavaram/2.webp",
+      "/images/categories/dharmavaram/3.webp"
+    ]
+  },
+  {
+    "id": "dharmavaram-3",
+    "categoryId": "dharmavaram",
+    "name": "Vibrant Midnight Blue Dharmavaram",
+    "slug": "vibrant-midnight-blue-dharmavaram",
+    "fabric": "Heavy Silk",
+    "description": "A breathtaking vibrant midnight blue dharmavaram adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Dharmavaram Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Midnight Blue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/dharmavaram/1.webp",
+      "/images/categories/dharmavaram/2.webp",
+      "/images/categories/dharmavaram/3.webp"
+    ]
+  },
+  {
+    "id": "dharmavaram-4",
+    "categoryId": "dharmavaram",
+    "name": "Elegant Golden Tissue Dharmavaram",
+    "slug": "elegant-golden-tissue-dharmavaram",
+    "fabric": "Heavy Silk",
+    "description": "A breathtaking elegant golden tissue dharmavaram adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Dharmavaram Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Golden Tissue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/dharmavaram/1.webp",
+      "/images/categories/dharmavaram/2.webp",
+      "/images/categories/dharmavaram/3.webp"
+    ]
+  },
+  {
+    "id": "georgette-1",
+    "categoryId": "georgette",
+    "name": "Royal Crimson Red Georgette",
+    "slug": "royal-crimson-red-georgette",
+    "fabric": "Pure Georgette",
+    "description": "A breathtaking royal crimson red georgette adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Georgette Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Crimson Red",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/georgette/1.webp",
+      "/images/categories/georgette/2.webp",
+      "/images/categories/georgette/3.webp"
+    ]
+  },
+  {
+    "id": "georgette-2",
+    "categoryId": "georgette",
+    "name": "Classic Emerald Green Georgette",
+    "slug": "classic-emerald-green-georgette",
+    "fabric": "Pure Georgette",
+    "description": "A breathtaking classic emerald green georgette adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Georgette Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Emerald Green",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/georgette/1.webp",
+      "/images/categories/georgette/2.webp",
+      "/images/categories/georgette/3.webp"
+    ]
+  },
+  {
+    "id": "georgette-3",
+    "categoryId": "georgette",
+    "name": "Vibrant Midnight Blue Georgette",
+    "slug": "vibrant-midnight-blue-georgette",
+    "fabric": "Pure Georgette",
+    "description": "A breathtaking vibrant midnight blue georgette adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Georgette Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Midnight Blue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/georgette/1.webp",
+      "/images/categories/georgette/2.webp",
+      "/images/categories/georgette/3.webp"
+    ]
+  },
+  {
+    "id": "georgette-4",
+    "categoryId": "georgette",
+    "name": "Elegant Golden Tissue Georgette",
+    "slug": "elegant-golden-tissue-georgette",
+    "fabric": "Pure Georgette",
+    "description": "A breathtaking elegant golden tissue georgette adorned with intricate weaving. Handwoven by master artisans, this heirloom piece showcases centuries-old techniques.",
+    "details": [
+      "Saree Type: Georgette Sarees",
+      "Occasion: Wedding, Festive, Reception",
+      "Colour: Golden Tissue",
+      "Length: 5.5 meters (with blouse piece)"
+    ],
+    "images": [
+      "/images/categories/georgette/1.webp",
+      "/images/categories/georgette/2.webp",
+      "/images/categories/georgette/3.webp"
+    ]
+  },
+  {
+    "id": "chiffon-1",
+    "categoryId": "chiffon",
+    "name": "Midnight Black Chiffon",
+    "slug": "midnight-black-chiffon",
+    "fabric": "Pure Chiffon",
+    "description": "A breathtaking midnight black chiffon adorned with delicate borders.",
+    "details": [
+      "Saree Type: Chiffon Sarees",
+      "Occasion: Party, Evening",
+      "Colour: Midnight Black",
+      "Length: 5.5 meters"
+    ],
+    "images": [
+      "/images/categories/chiffon/1.webp",
+      "/images/categories/chiffon/2.webp",
+      "/images/categories/chiffon/3.webp"
+    ]
+  },
+  {
+    "id": "chiffon-2",
+    "categoryId": "chiffon",
+    "name": "Pastel Pink Chiffon",
+    "slug": "pastel-pink-chiffon",
+    "fabric": "Pure Chiffon",
+    "description": "An elegant pastel pink chiffon perfect for daytime events.",
+    "details": [
+      "Saree Type: Chiffon Sarees",
+      "Occasion: Day Event, Casual",
+      "Colour: Pastel Pink",
+      "Length: 5.5 meters"
+    ],
+    "images": [
+      "/images/categories/chiffon/1.webp",
+      "/images/categories/chiffon/2.webp",
+      "/images/categories/chiffon/3.webp"
+    ]
+  }
+]
