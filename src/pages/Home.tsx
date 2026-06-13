@@ -103,7 +103,7 @@ export default function Home() {
                   </Link>
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left">
-                  <span className="text-[#D4AF37] text-sm uppercase tracking-[0.3em] font-medium mb-4 block">Chapter 0{index + 1}</span>
+
                   <h3 className="font-serif text-4xl md:text-5xl uppercase tracking-wider mb-6">{category.name}</h3>
                   <p className="text-gray-600 font-light leading-relaxed mb-10 max-w-md mx-auto md:mx-0">
                     {category.description}

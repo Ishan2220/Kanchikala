@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Phone, MessageCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
@@ -6,6 +7,7 @@ import { Accordion } from "@/components/Accordion";
 
 export default function CategoryPage() {
   const { categorySlug } = useParams<{ categorySlug: string }>();
+  const [mainImageIndex, setMainImageIndex] = useState(0);
   
   const category = categoriesData.find(c => c.slug === categorySlug);
   
@@ -60,18 +62,35 @@ export default function CategoryPage() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex-1">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
           
-          {/* Image Gallery (Horizontal swipe on mobile, stacked on desktop) */}
-          <div className="w-full lg:w-3/5 flex flex-row lg:flex-col overflow-x-auto lg:overflow-x-visible snap-x snap-mandatory lg:snap-none no-scrollbar gap-4">
-            {category.images && category.images.map((image, index) => (
-              <div key={index} className="relative aspect-[2/3] w-full shrink-0 snap-center lg:snap-align-none overflow-hidden bg-gray-100 shadow-sm">
-                <img
-                  src={image}
-                  alt={`${category.name} View ${index + 1}`}
-                  loading={index === 0 ? "eager" : "lazy"}
-                  className="w-full h-full object-cover"
-                />
+          {/* Image Gallery */}
+          <div className="w-full lg:w-3/5 flex flex-col gap-4">
+            {/* Main Image */}
+            <div className="relative aspect-[3/4] sm:aspect-[4/5] lg:aspect-[2/3] w-full overflow-hidden bg-gray-100 shadow-sm">
+              <img
+                src={category.images?.[mainImageIndex] || category.coverImage}
+                alt={`${category.name} Main View`}
+                className="w-full h-full object-cover transition-opacity duration-500"
+              />
+            </div>
+            
+            {/* Thumbnails */}
+            {category.images && category.images.length > 1 && (
+              <div className="flex gap-4 overflow-x-auto no-scrollbar py-2">
+                {category.images.map((image, index) => (
+                  <button 
+                    key={index} 
+                    onClick={() => setMainImageIndex(index)}
+                    className={`relative w-20 sm:w-24 shrink-0 aspect-[3/4] overflow-hidden border-2 transition-all duration-300 ${mainImageIndex === index ? 'border-[#D4AF37] opacity-100' : 'border-transparent opacity-60 hover:opacity-100'}`}
+                  >
+                    <img
+                      src={image}
+                      alt={`${category.name} Thumbnail ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </button>
+                ))}
               </div>
-            ))}
+            )}
           </div>
 
           {/* Category Info (Natural document flow) */}
