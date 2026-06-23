@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, MapPin, Clock, Phone } from "lucide-react";
+import { ArrowRight, MapPin, Clock, Phone, Navigation } from "lucide-react";
 import { motion } from "framer-motion";
 import categoriesData from "@/data/categories.json";
 import { ImageSlider } from "@/components/ImageSlider";
@@ -231,6 +231,18 @@ export default function Home() {
                       +91 91759 54455
                     </p>
                   </div>
+                </div>
+
+                <div className="pt-6 mt-4">
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=KanchiKala+Sarees+7th+Lane+Rajarampuri+Kolhapur"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-3 bg-[#2A2A2A] text-white hover:bg-[#D4AF37] px-8 py-4 uppercase tracking-widest text-sm transition-all duration-500 hover:shadow-xl hover:-translate-y-1 group"
+                  >
+                    <span>Get Directions</span>
+                    <Navigation className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" strokeWidth={1.5} />
+                  </a>
                 </div>
               </div>
             </div>
