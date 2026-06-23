@@ -235,7 +235,7 @@ export default function Home() {
 
                 <div className="pt-6 mt-4">
                   <a 
-                    href="https://www.google.com/maps/search/?api=1&query=KanchiKala+Sarees+7th+Lane+Rajarampuri+Kolhapur"
+                    href="https://maps.app.goo.gl/UXqErpFKTcRCYjLu6"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-3 bg-[#2A2A2A] text-white hover:bg-[#D4AF37] px-8 py-4 uppercase tracking-widest text-sm transition-all duration-500 hover:shadow-xl hover:-translate-y-1 group"
