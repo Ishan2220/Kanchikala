@@ -9,62 +9,97 @@ export default function Home() {
 
   return (
     <>
-      {/* Vogue-Inspired Asymmetrical Hero Section */}
-      <section className="relative min-h-[100svh] w-full bg-[#FEFCF8] flex items-center justify-center pt-24 pb-12 overflow-hidden">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-full">
-          <div className="flex flex-col md:flex-row h-full items-center justify-between gap-12 lg:gap-24">
+      {/* Editorial Video Hero Section */}
+      <section className="relative min-h-[100svh] w-full bg-[#FEFCF8] pt-20 md:pt-28 pb-12 overflow-hidden flex items-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-24">
             
-            {/* 40% Negative Space / Typography (Left) */}
-            <div className="w-full md:w-[45%] flex flex-col justify-center order-2 md:order-1 pb-12 md:pb-0">
+            {/* Left/Top: Portrait Video */}
+            <div className="w-full md:w-[45%] h-[75svh] md:h-[85vh] relative order-1 shadow-[0_20px_50px_rgba(0,0,0,0.15)] overflow-hidden group">
               <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
-                className="mb-8"
-              >
-
-                <p className="font-serif text-xl md:text-2xl text-gray-800 italic font-light tracking-wide text-center md:text-left">
-                  Celebrating India's Finest Weaves
-                </p>
-              </motion.div>
-
-              <motion.div 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1.5, ease: "easeOut", delay: 0.8 }}
-                className="flex flex-col sm:flex-row gap-6 mt-8"
-              >
-                <Link 
-                  to="/collections" 
-                  className="bg-[#D4AF37]/90 hover:bg-[#D4AF37] text-white px-10 py-4 text-center uppercase tracking-widest text-xs transition-colors rounded-[30px] shadow-lg hover:shadow-xl"
-                >
-                  Explore Collections
-                </Link>
-                <a 
-                  href="https://wa.me/919175954455" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-transparent border border-gray-300 hover:border-[#D4AF37] text-gray-800 hover:text-[#D4AF37] px-10 py-4 text-center uppercase tracking-widest text-xs transition-colors rounded-[30px]"
-                >
-                  WhatsApp Us
-                </a>
-              </motion.div>
-            </div>
-
-            {/* 60% Image (Right/Top on Mobile) */}
-            <div className="w-full md:w-[55%] h-[55vh] sm:h-[65vh] md:h-[85vh] relative order-1 md:order-2 -mx-4 sm:mx-0">
-              <motion.div 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 2, ease: "easeOut" }}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
                 className="w-full h-full relative"
               >
                 <div className="absolute inset-0 bg-[#E8E5DF] animate-pulse"></div>
-                <img
-                  src="/images/model.webp"
-                  alt="KanchiKala Luxury Campaign"
-                  className="w-full h-full object-cover object-center absolute inset-0 z-10"
+                {/* Note: Upload your video to public/videos/hero-video.mp4 */}
+                <video
+                  src="/videos/hero-video.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover object-center absolute inset-0 z-10 transition-transform duration-1000 group-hover:scale-105"
+                  poster="/images/model.webp"
                 />
+                <div className="absolute inset-0 bg-black/10 z-20 transition-opacity duration-700 group-hover:bg-black/0"></div>
+                
+                {/* Overlay Premium Play effect (Visual only) */}
+                <div className="absolute inset-0 z-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                  <div className="w-20 h-20 rounded-full border border-white/50 flex items-center justify-center backdrop-blur-sm">
+                    <div className="w-2 h-2 bg-white rounded-full animate-ping"></div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Right/Bottom: Premium Typography & Content */}
+            <div className="w-full md:w-[50%] flex flex-col justify-center order-2">
+              <motion.div 
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
+                className="mb-8"
+              >
+                <h1 className="font-serif text-5xl md:text-6xl lg:text-8xl text-[#2A2A2A] tracking-tighter leading-none mb-6">
+                  Timeless<br/>
+                  <span className="text-[#D4AF37] italic font-light tracking-wide pr-2">Elegance.</span>
+                </h1>
+                
+                <div className="w-24 h-[1px] bg-[#D4AF37] mb-8"></div>
+                
+                <p className="font-serif text-lg md:text-xl text-gray-600 leading-relaxed max-w-lg mb-10 font-light">
+                  Discover the epitome of Indian heritage. Every thread weaves a story of tradition, crafted for the modern connoisseur of luxury.
+                </p>
+
+                <div className="flex flex-col sm:flex-row gap-5">
+                  <Link 
+                    to="/collections" 
+                    className="bg-[#2A2A2A] text-white hover:bg-[#D4AF37] hover:-translate-y-1 hover:shadow-xl px-10 py-5 text-center uppercase tracking-widest text-xs transition-all duration-500"
+                  >
+                    Explore Collections
+                  </Link>
+                  <a 
+                    href="https://wa.me/919175954455" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-transparent border border-[#2A2A2A] text-[#2A2A2A] hover:bg-[#2A2A2A] hover:text-white hover:-translate-y-1 hover:shadow-xl px-10 py-5 text-center uppercase tracking-widest text-xs transition-all duration-500"
+                  >
+                    Book Appointment
+                  </a>
+                </div>
+              </motion.div>
+
+              {/* Floating Stats / Trust badges */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.2, ease: "easeOut", delay: 0.6 }}
+                className="mt-12 pt-10 border-t border-[#E8E5DF] grid grid-cols-3 gap-6"
+              >
+                <div className="group cursor-default">
+                  <p className="text-3xl font-serif text-[#D4AF37] mb-1 transition-transform duration-500 group-hover:-translate-y-1">50+</p>
+                  <p className="text-[10px] uppercase tracking-widest text-gray-500 group-hover:text-[#2A2A2A] transition-colors duration-300">Master Weavers</p>
+                </div>
+                <div className="group cursor-default">
+                  <p className="text-3xl font-serif text-[#D4AF37] mb-1 transition-transform duration-500 group-hover:-translate-y-1">100%</p>
+                  <p className="text-[10px] uppercase tracking-widest text-gray-500 group-hover:text-[#2A2A2A] transition-colors duration-300">Pure Silk</p>
+                </div>
+                <div className="group cursor-default">
+                  <p className="text-3xl font-serif text-[#D4AF37] mb-1 transition-transform duration-500 group-hover:-translate-y-1">Authentic</p>
+                  <p className="text-[10px] uppercase tracking-widest text-gray-500 group-hover:text-[#2A2A2A] transition-colors duration-300">Heritage</p>
+                </div>
               </motion.div>
             </div>
 
