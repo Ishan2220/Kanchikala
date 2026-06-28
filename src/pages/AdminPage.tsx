@@ -278,7 +278,7 @@ export default function AdminPage() {
 
               <div className="pt-4 border-t border-[#222222] text-center">
                 <p className="text-[11px] text-gray-500 font-light">
-                  Default Credentials: <span className="text-[#D4AF37] font-medium">admin</span> / <span className="text-[#D4AF37] font-medium">kanchikala</span>
+                  Restricted access. Authorized personnel only.
                 </p>
               </div>
             </form>
