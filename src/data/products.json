@@ -162,42 +162,6 @@
     ]
   },
   {
-    "id": "pochampally-2",
-    "categoryId": "pochampally",
-    "name": "Pochampally Ikkat Saree",
-    "slug": "pochampally-ikkat-2",
-    "fabric": "Pure Ikkat Silk",
-    "description": "Famous for mesmerizing geometric double-ikkat patterns where yarn is resist-dyed before weaving. Woven in Bhoodan Pochampally, these sarees offer a distinct visual rhythm and feather-light drape.",
-    "details": [
-      "Collection: Pochampally Ikkat",
-      "Speciality: Intricate Geometric Resist-Dyed Double Ikkat",
-      "Occasion: Cultural Events, Festive Gatherings & Premium Daywear",
-      "Craftsmanship: Handwoven Telangana Ikkat Artistry",
-      "Care: Dry clean only. Store in muslin cloth."
-    ],
-    "images": [
-      "/images/categories/pochampally/2.webp"
-    ]
-  },
-  {
-    "id": "pochampally-3",
-    "categoryId": "pochampally",
-    "name": "Pochampally Ikkat Saree",
-    "slug": "pochampally-ikkat-3",
-    "fabric": "Pure Ikkat Silk",
-    "description": "Famous for mesmerizing geometric double-ikkat patterns where yarn is resist-dyed before weaving. Woven in Bhoodan Pochampally, these sarees offer a distinct visual rhythm and feather-light drape.",
-    "details": [
-      "Collection: Pochampally Ikkat",
-      "Speciality: Intricate Geometric Resist-Dyed Double Ikkat",
-      "Occasion: Cultural Events, Festive Gatherings & Premium Daywear",
-      "Craftsmanship: Handwoven Telangana Ikkat Artistry",
-      "Care: Dry clean only. Store in muslin cloth."
-    ],
-    "images": [
-      "/images/categories/pochampally/3.webp"
-    ]
-  },
-  {
     "id": "bandhani-1",
     "categoryId": "bandhani",
     "name": "Bandhani Saree",
@@ -216,42 +180,6 @@
     ]
   },
   {
-    "id": "bandhani-2",
-    "categoryId": "bandhani",
-    "name": "Bandhani Saree",
-    "slug": "bandhani-sarees-2",
-    "fabric": "Pure Modal / Gajji Silk",
-    "description": "Crafted using the ancient tie-and-dye technique of Gujarat and Rajasthan, featuring thousands of intricate hand-tied knots that create delicate geometric and floral patterns on flowing silk.",
-    "details": [
-      "Collection: Royal Bandhani",
-      "Speciality: Intricate Hand-Tied Resist Dyeing (Khatri Craft)",
-      "Occasion: Traditional Festivities, Mehendi & Celebrations",
-      "Craftsmanship: Authentic Artisanal Tie & Dye Heritage",
-      "Care: Dry clean only. Store in muslin cloth."
-    ],
-    "images": [
-      "/images/categories/bandhani/2.webp"
-    ]
-  },
-  {
-    "id": "bandhani-3",
-    "categoryId": "bandhani",
-    "name": "Bandhani Saree",
-    "slug": "bandhani-sarees-3",
-    "fabric": "Pure Modal / Gajji Silk",
-    "description": "Crafted using the ancient tie-and-dye technique of Gujarat and Rajasthan, featuring thousands of intricate hand-tied knots that create delicate geometric and floral patterns on flowing silk.",
-    "details": [
-      "Collection: Royal Bandhani",
-      "Speciality: Intricate Hand-Tied Resist Dyeing (Khatri Craft)",
-      "Occasion: Traditional Festivities, Mehendi & Celebrations",
-      "Craftsmanship: Authentic Artisanal Tie & Dye Heritage",
-      "Care: Dry clean only. Store in muslin cloth."
-    ],
-    "images": [
-      "/images/categories/bandhani/3.webp"
-    ]
-  },
-  {
     "id": "leheriya-1",
     "categoryId": "leheriya",
     "name": "Leheriya Saree",
@@ -267,42 +195,6 @@
     ],
     "images": [
       "/images/categories/leheriya/1.webp"
-    ]
-  },
-  {
-    "id": "leheriya-2",
-    "categoryId": "leheriya",
-    "name": "Leheriya Saree",
-    "slug": "leheriya-sarees-2",
-    "fabric": "Pure Chiffon / Georgette Silk",
-    "description": "Distinctive diagonal wave patterns created through traditional Rajasthani resist-dyeing techniques. Celebrated for dynamic visual flow, feather-light weight, and graceful movement.",
-    "details": [
-      "Collection: Rajasthani Leheriya",
-      "Speciality: Traditional Diagonal Wave Resist Dyeing",
-      "Occasion: Festive Celebrations, Day Events & Cultural Gatherings",
-      "Craftsmanship: Hand-Dyed Jaipur Craftsmanship",
-      "Care: Dry clean only. Store in muslin cloth."
-    ],
-    "images": [
-      "/images/categories/leheriya/2.webp"
-    ]
-  },
-  {
-    "id": "leheriya-3",
-    "categoryId": "leheriya",
-    "name": "Leheriya Saree",
-    "slug": "leheriya-sarees-3",
-    "fabric": "Pure Chiffon / Georgette Silk",
-    "description": "Distinctive diagonal wave patterns created through traditional Rajasthani resist-dyeing techniques. Celebrated for dynamic visual flow, feather-light weight, and graceful movement.",
-    "details": [
-      "Collection: Rajasthani Leheriya",
-      "Speciality: Traditional Diagonal Wave Resist Dyeing",
-      "Occasion: Festive Celebrations, Day Events & Cultural Gatherings",
-      "Craftsmanship: Hand-Dyed Jaipur Craftsmanship",
-      "Care: Dry clean only. Store in muslin cloth."
-    ],
-    "images": [
-      "/images/categories/leheriya/3.webp"
     ]
   },
   {
@@ -540,42 +432,6 @@
     ]
   },
   {
-    "id": "muga-silk-2",
-    "categoryId": "muga-silk",
-    "name": "Muga Silk Saree",
-    "slug": "muga-silk-sarees-2",
-    "fabric": "Pure Assam Muga Silk",
-    "description": "Woven from rare wild Assam silk known for its natural extreme luster and durability that actually increases after every wash. A symbol of royalty and pride of Assamese heritage.",
-    "details": [
-      "Collection: Assam Muga Silk",
-      "Speciality: Rare Natural Golden Glow & High Durability",
-      "Occasion: Traditional Assamese Weddings & Prestige Gatherings",
-      "Craftsmanship: Authentic Assam Handloom",
-      "Care: Dry clean only. Store in muslin cloth."
-    ],
-    "images": [
-      "/images/categories/muga-silk/2.webp"
-    ]
-  },
-  {
-    "id": "muga-silk-3",
-    "categoryId": "muga-silk",
-    "name": "Muga Silk Saree",
-    "slug": "muga-silk-sarees-3",
-    "fabric": "Pure Assam Muga Silk",
-    "description": "Woven from rare wild Assam silk known for its natural extreme luster and durability that actually increases after every wash. A symbol of royalty and pride of Assamese heritage.",
-    "details": [
-      "Collection: Assam Muga Silk",
-      "Speciality: Rare Natural Golden Glow & High Durability",
-      "Occasion: Traditional Assamese Weddings & Prestige Gatherings",
-      "Craftsmanship: Authentic Assam Handloom",
-      "Care: Dry clean only. Store in muslin cloth."
-    ],
-    "images": [
-      "/images/categories/muga-silk/3.webp"
-    ]
-  },
-  {
     "id": "dharmavaram-1",
     "categoryId": "dharmavaram",
     "name": "Dharmavaram Saree",
@@ -591,42 +447,6 @@
     ],
     "images": [
       "/images/categories/dharmavaram/1.webp"
-    ]
-  },
-  {
-    "id": "dharmavaram-2",
-    "categoryId": "dharmavaram",
-    "name": "Dharmavaram Saree",
-    "slug": "dharmavaram-sarees-2",
-    "fabric": "Heavy Mulberry Silk with Zari Brocade",
-    "description": "Famed for broad solid borders and elaborate brocade patterns woven in heavy mulberry silk. Features striking contrast pallus and intricate temple designs inspired by South Indian architecture.",
-    "details": [
-      "Collection: Dharmavaram Silk",
-      "Speciality: Broad Contrast Brocade Borders & Heavy Zari Weaving",
-      "Occasion: Bridal Ceremonies, Weddings & Temple Festivals",
-      "Craftsmanship: Handwoven Andhra Pradesh Heritage",
-      "Care: Dry clean only. Store in muslin cloth."
-    ],
-    "images": [
-      "/images/categories/dharmavaram/2.webp"
-    ]
-  },
-  {
-    "id": "dharmavaram-3",
-    "categoryId": "dharmavaram",
-    "name": "Dharmavaram Saree",
-    "slug": "dharmavaram-sarees-3",
-    "fabric": "Heavy Mulberry Silk with Zari Brocade",
-    "description": "Famed for broad solid borders and elaborate brocade patterns woven in heavy mulberry silk. Features striking contrast pallus and intricate temple designs inspired by South Indian architecture.",
-    "details": [
-      "Collection: Dharmavaram Silk",
-      "Speciality: Broad Contrast Brocade Borders & Heavy Zari Weaving",
-      "Occasion: Bridal Ceremonies, Weddings & Temple Festivals",
-      "Craftsmanship: Handwoven Andhra Pradesh Heritage",
-      "Care: Dry clean only. Store in muslin cloth."
-    ],
-    "images": [
-      "/images/categories/dharmavaram/3.webp"
     ]
   },
   {
@@ -648,42 +468,6 @@
     ]
   },
   {
-    "id": "georgette-2",
-    "categoryId": "georgette",
-    "name": "Georgette Saree",
-    "slug": "georgette-sarees-2",
-    "fabric": "Pure Khaddi Georgette Silk",
-    "description": "Crafted from highly twisted yarns creating a sheer, lightweight crepe texture with exquisite fluidity and bounce. Perfect for contemporary silhouettes and effortless draping.",
-    "details": [
-      "Collection: Pure Georgette",
-      "Speciality: Sheer Fluid Crepe Texture & Effortless Drape",
-      "Occasion: Cocktail Parties, Reception Evenings & Festive Celebrations",
-      "Craftsmanship: Handwoven Khaddi Artistry",
-      "Care: Dry clean only. Store in muslin cloth."
-    ],
-    "images": [
-      "/images/categories/georgette/2.webp"
-    ]
-  },
-  {
-    "id": "georgette-3",
-    "categoryId": "georgette",
-    "name": "Georgette Saree",
-    "slug": "georgette-sarees-3",
-    "fabric": "Pure Khaddi Georgette Silk",
-    "description": "Crafted from highly twisted yarns creating a sheer, lightweight crepe texture with exquisite fluidity and bounce. Perfect for contemporary silhouettes and effortless draping.",
-    "details": [
-      "Collection: Pure Georgette",
-      "Speciality: Sheer Fluid Crepe Texture & Effortless Drape",
-      "Occasion: Cocktail Parties, Reception Evenings & Festive Celebrations",
-      "Craftsmanship: Handwoven Khaddi Artistry",
-      "Care: Dry clean only. Store in muslin cloth."
-    ],
-    "images": [
-      "/images/categories/georgette/3.webp"
-    ]
-  },
-  {
     "id": "chiffon-1",
     "categoryId": "chiffon",
     "name": "Chiffon Saree",
@@ -699,42 +483,6 @@
     ],
     "images": [
       "/images/categories/chiffon/1.webp"
-    ]
-  },
-  {
-    "id": "chiffon-2",
-    "categoryId": "chiffon",
-    "name": "Chiffon Saree",
-    "slug": "chiffon-sarees-2",
-    "fabric": "Pure Khaddi Chiffon Silk",
-    "description": "Celebrated for feather-light softness, sheer elegance, and graceful fluidity. Adorned with subtle zari work or fine borders, offering unmatched comfort and modern sophistication.",
-    "details": [
-      "Collection: Pure Chiffon",
-      "Speciality: Feather-Light Softness & Graceful Fluid Drape",
-      "Occasion: Evening Soirees, Summer Weddings & Contemporary Wear",
-      "Craftsmanship: Handwoven Artisan Silk",
-      "Care: Dry clean only. Store in muslin cloth."
-    ],
-    "images": [
-      "/images/categories/chiffon/2.webp"
-    ]
-  },
-  {
-    "id": "chiffon-3",
-    "categoryId": "chiffon",
-    "name": "Chiffon Saree",
-    "slug": "chiffon-sarees-3",
-    "fabric": "Pure Khaddi Chiffon Silk",
-    "description": "Celebrated for feather-light softness, sheer elegance, and graceful fluidity. Adorned with subtle zari work or fine borders, offering unmatched comfort and modern sophistication.",
-    "details": [
-      "Collection: Pure Chiffon",
-      "Speciality: Feather-Light Softness & Graceful Fluid Drape",
-      "Occasion: Evening Soirees, Summer Weddings & Contemporary Wear",
-      "Craftsmanship: Handwoven Artisan Silk",
-      "Care: Dry clean only. Store in muslin cloth."
-    ],
-    "images": [
-      "/images/categories/chiffon/3.webp"
     ]
   },
   {
