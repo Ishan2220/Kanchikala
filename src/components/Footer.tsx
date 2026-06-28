@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin } from "lucide-react";
-import categoriesData from "@/data/categories.json";
+import { useCatalog } from "@/context/CatalogContext";
 import { scrollToTop } from "@/lib/utils";
 
 export function Footer() {
+  const { categories: categoriesData } = useCatalog();
   return (
     <footer className="bg-[#0A0A0A] text-[#E8E5DF] pt-24 pb-24 md:pb-12 relative overflow-hidden">
       {/* Subtle Gold Dust Texture */}
@@ -58,6 +59,7 @@ export function Footer() {
                 <li><a href="/#visit-store" onClick={scrollToTop} className="hover:text-[#D4AF37] transition-colors">Store Location</a></li>
                 <li><a href="/#stylist" onClick={scrollToTop} className="hover:text-[#D4AF37] transition-colors">Personal Stylist</a></li>
                 <li><a href="https://wa.me/919175954455" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors">Book Appointment</a></li>
+                <li><Link to="/admin" onClick={scrollToTop} className="hover:text-white transition-colors text-[#D4AF37] font-medium">Admin Portal</Link></li>
               </ul>
             </div>
 

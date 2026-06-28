@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
 import { Phone, MessageCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import productsData from "@/data/products.json";
+import { useCatalog } from "@/context/CatalogContext";
 import { Accordion } from "@/components/Accordion";
 
 export default function ProductPage() {
+  const { products: productsData } = useCatalog();
   const { productSlug } = useParams<{ productSlug: string }>();
   const product = productsData.find((p) => p.slug === productSlug);
   
@@ -73,7 +74,8 @@ export default function ProductPage() {
           <div className="w-full lg:w-2/5">
             <div className="sticky top-32">
               <span className="text-[#D4AF37] text-xs uppercase tracking-[0.3em] font-medium mb-4 block">Handloom Collection</span>
-              <h1 className="font-serif text-4xl md:text-5xl uppercase tracking-widest mb-6 leading-tight">{product.name}</h1>
+              <h1 className="font-serif text-4xl md:text-5xl uppercase tracking-widest mb-4 leading-tight">{product.name}</h1>
+              {product.price && <div className="text-2xl md:text-3xl font-semibold text-[#9A845A] mb-6">{product.price}</div>}
               
               <div className="mb-10 text-gray-600 font-light leading-relaxed">
                 <p>{product.description}</p>

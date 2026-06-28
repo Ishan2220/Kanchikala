@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
-import categoriesData from "@/data/categories.json";
+import { useCatalog } from "@/context/CatalogContext";
 import { scrollToTop } from "@/lib/utils";
 
 export default function Collections() {
+  const { categories: categoriesData } = useCatalog();
   return (
     <div className="pt-32 pb-32 bg-[#FEFCF8] min-h-screen relative overflow-hidden">
       {/* Subtle Premium Background Pattern */}

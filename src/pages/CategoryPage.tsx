@@ -1,12 +1,12 @@
 import { useParams, Link } from "react-router-dom";
 import { Phone, MessageCircle, Sparkles, ArrowRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import categoriesData from "@/data/categories.json";
-import productsData from "@/data/products.json";
+import { useCatalog } from "@/context/CatalogContext";
 import { Accordion } from "@/components/Accordion";
 import { scrollToTop } from "@/lib/utils";
 
 export default function CategoryPage() {
+  const { categories: categoriesData, products: productsData } = useCatalog();
   const { categorySlug } = useParams<{ categorySlug: string }>();
   
   const category = categoriesData.find(c => c.slug === categorySlug);
@@ -120,6 +120,7 @@ export default function CategoryPage() {
                             {product.name}
                           </h3>
                         </Link>
+                        {product.price && <p className="font-semibold text-sm sm:text-base text-[#9A845A] mt-2">{product.price}</p>}
                       </div>
 
                       {/* Sophisticated Action Bar */}

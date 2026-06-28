@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, MapPin, Clock, Phone, Navigation } from "lucide-react";
 import { motion } from "framer-motion";
-import categoriesData from "@/data/categories.json";
+import { useCatalog } from "@/context/CatalogContext";
 import { ImageSlider } from "@/components/ImageSlider";
 import { scrollToTop } from "@/lib/utils";
 
@@ -75,6 +75,7 @@ function HeroCarousel() {
 }
 
 export default function Home() {
+  const { categories: categoriesData } = useCatalog();
   const topCategories = categoriesData.slice(0, 4);
 
   return (

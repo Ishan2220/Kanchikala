@@ -4,11 +4,11 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Search, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import categoriesData from "@/data/categories.json";
-import productsData from "@/data/products.json";
+import { useCatalog } from "@/context/CatalogContext";
 import { scrollToTop } from "@/lib/utils";
 
 export function Header() {
+  const { categories: categoriesData, products: productsData } = useCatalog();
 
   const [hidden, setHidden] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -147,6 +147,10 @@ export function Header() {
                   <span className="text-[#D4AF37] text-xs sm:text-sm font-medium w-6 shrink-0">04</span>
                   <span className="text-2xl sm:text-4xl tracking-wider sm:tracking-widest uppercase font-serif text-[#2A2A2A] group-hover:text-[#D4AF37] transition-colors truncate">Visit Store</span>
                 </a>
+                <Link onClick={() => { setMobileMenuOpen(false); scrollToTop(); }} to="/admin" className="group flex items-center gap-3 sm:gap-4 py-1">
+                  <span className="text-[#D4AF37] text-xs sm:text-sm font-medium w-6 shrink-0">05</span>
+                  <span className="text-2xl sm:text-4xl tracking-wider sm:tracking-widest uppercase font-serif text-[#D4AF37] group-hover:text-[#2A2A2A] transition-colors truncate">Admin Portal</span>
+                </Link>
               </div>
               <div className="p-6 sm:p-10 border-t border-[#E8E5DF] bg-[#F5F5F0]">
                 <p className="text-xs tracking-widest uppercase text-gray-500 mb-2">Contact Us</p>
@@ -236,7 +240,8 @@ export function Header() {
                               </div>
                               <div>
                                 <p className="font-serif text-[#2A2A2A] text-base md:text-lg group-hover:text-[#D4AF37] transition-colors line-clamp-2 leading-snug">{product.name}</p>
-                                <p className="text-[10px] md:text-xs text-gray-500 mt-2 md:mt-3 uppercase tracking-wider">{product.fabric}</p>
+                                {product.price && <p className="text-xs font-semibold text-[#D4AF37] mt-1">{product.price}</p>}
+                                <p className="text-[10px] md:text-xs text-gray-500 mt-1 md:mt-2 uppercase tracking-wider">{product.fabric}</p>
                               </div>
                             </Link>
                           ))}
