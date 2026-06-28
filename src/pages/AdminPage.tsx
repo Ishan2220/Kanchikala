@@ -294,30 +294,30 @@ export default function AdminPage() {
         <title>Admin Dashboard | KanchiKala</title>
       </Helmet>
 
-      <div className="min-h-screen bg-[#0A0A0A] text-[#E8E5DF] pt-28 pb-20 px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen bg-[#0A0A0A] text-[#E8E5DF] pt-28 pb-20 px-4 sm:px-6 lg:px-8 overflow-x-hidden">
         <div className="max-w-7xl mx-auto">
           
           {/* Header */}
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-[#222222] mb-10">
             <div>
               <div className="flex items-center gap-3 text-[#D4AF37] mb-2">
-                <Shield className="w-6 h-6" />
-                <span className="text-xs uppercase tracking-[0.3em] font-medium">Administrator Portal</span>
+                <Shield className="w-6 h-6 shrink-0" />
+                <span className="text-xs uppercase tracking-[0.3em] font-medium truncate">Administrator Portal</span>
               </div>
               <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl tracking-wide">Catalog Management</h1>
             </div>
 
-            <div className="flex flex-wrap gap-3">
-              <div className="inline-flex items-center gap-2 bg-emerald-950/40 border border-emerald-800/50 px-4 py-2.5 rounded-lg text-xs uppercase tracking-widest text-emerald-400 font-medium">
-                <Globe className="w-4 h-4 animate-pulse" />
-                Live Cloud Sync Active
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3 w-full sm:w-auto">
+              <div className="inline-flex items-center gap-2 bg-emerald-950/40 border border-emerald-800/50 px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg text-[11px] sm:text-xs uppercase tracking-widest text-emerald-400 font-medium">
+                <Globe className="w-3.5 h-3.5 sm:w-4 sm:h-4 animate-pulse shrink-0" />
+                <span>Live Cloud Sync</span>
               </div>
               <button
                 onClick={exportCatalog}
-                className="inline-flex items-center gap-2 bg-[#1A1A1A] hover:bg-[#2A2A2A] text-white border border-[#333333] px-4 py-2.5 rounded-lg text-xs uppercase tracking-widest transition-colors"
+                className="inline-flex items-center gap-1.5 sm:gap-2 bg-[#1A1A1A] hover:bg-[#2A2A2A] text-white border border-[#333333] px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg text-[11px] sm:text-xs uppercase tracking-widest transition-colors"
               >
-                <Download className="w-4 h-4 text-[#D4AF37]" />
-                Export Backup
+                <Download className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#D4AF37]" />
+                Export
               </button>
               <button
                 onClick={() => {
@@ -325,19 +325,19 @@ export default function AdminPage() {
                     resetCatalog();
                   }
                 }}
-                className="inline-flex items-center gap-2 bg-red-950/40 hover:bg-red-900/60 text-red-300 border border-red-800/50 px-4 py-2.5 rounded-lg text-xs uppercase tracking-widest transition-colors"
+                className="inline-flex items-center gap-1.5 sm:gap-2 bg-red-950/40 hover:bg-red-900/60 text-red-300 border border-red-800/50 px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg text-[11px] sm:text-xs uppercase tracking-widest transition-colors"
               >
-                <RotateCcw className="w-4 h-4" />
-                Reset Factory
+                <RotateCcw className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                Reset
               </button>
               <button
                 onClick={() => {
                   sessionStorage.removeItem("kanchikala_admin_logged_in");
                   setIsLoggedIn(false);
                 }}
-                className="inline-flex items-center gap-2 bg-[#1A1A1A] hover:bg-[#2A2A2A] text-gray-300 border border-[#333333] px-4 py-2.5 rounded-lg text-xs uppercase tracking-widest transition-colors"
+                className="inline-flex items-center gap-1.5 sm:gap-2 bg-[#1A1A1A] hover:bg-[#2A2A2A] text-gray-300 border border-[#333333] px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg text-[11px] sm:text-xs uppercase tracking-widest transition-colors ml-auto sm:ml-0"
               >
-                <LogOut className="w-4 h-4 text-gray-400" />
+                <LogOut className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gray-400" />
                 Logout
               </button>
             </div>
@@ -345,38 +345,38 @@ export default function AdminPage() {
 
           {/* Navigation Tabs */}
           <div className="flex items-center justify-between flex-wrap gap-4 mb-8">
-            <div className="flex gap-2 bg-[#141414] p-1.5 rounded-xl border border-[#222222]">
+            <div className="flex gap-1 sm:gap-2 bg-[#141414] p-1 sm:p-1.5 rounded-xl border border-[#222222] w-full sm:w-auto overflow-x-auto no-scrollbar">
               <button
                 onClick={() => setActiveTab("categories")}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs uppercase tracking-widest font-medium transition-all ${
+                className={`flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg text-[10px] sm:text-xs uppercase tracking-wider sm:tracking-widest font-medium transition-all whitespace-nowrap flex-1 sm:flex-initial ${
                   activeTab === "categories"
                     ? "bg-[#D4AF37] text-black shadow-lg"
                     : "text-gray-400 hover:text-white"
                 }`}
               >
-                <Layers className="w-4 h-4" />
+                <Layers className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 Categories ({categories.length})
               </button>
               <button
                 onClick={() => setActiveTab("products")}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs uppercase tracking-widest font-medium transition-all ${
+                className={`flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg text-[10px] sm:text-xs uppercase tracking-wider sm:tracking-widest font-medium transition-all whitespace-nowrap flex-1 sm:flex-initial ${
                   activeTab === "products"
                     ? "bg-[#D4AF37] text-black shadow-lg"
                     : "text-gray-400 hover:text-white"
                 }`}
               >
-                <Package className="w-4 h-4" />
+                <Package className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 Products ({products.length})
               </button>
               <button
                 onClick={() => setActiveTab("settings")}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs uppercase tracking-widest font-medium transition-all ${
+                className={`flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg text-[10px] sm:text-xs uppercase tracking-wider sm:tracking-widest font-medium transition-all whitespace-nowrap flex-1 sm:flex-initial ${
                   activeTab === "settings"
                     ? "bg-[#D4AF37] text-black shadow-lg"
                     : "text-gray-400 hover:text-white"
                 }`}
               >
-                <Settings className="w-4 h-4" />
+                <Settings className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 Data & Backup
               </button>
             </div>
