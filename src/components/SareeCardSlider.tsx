@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { scrollToTop } from "@/lib/utils";
 
 interface SareeCardSliderProps {
   productSlug: string;
@@ -32,7 +33,7 @@ export function SareeCardSlider({ productSlug, images, name, fabric }: SareeCard
     >
       {/* Image Slider Container */}
       <div className="relative aspect-[3/4] overflow-hidden bg-gray-100 mb-6">
-        <Link to={`/product/${productSlug}`} className="block w-full h-full relative">
+        <Link to={`/product/${productSlug}`} onClick={scrollToTop} className="block w-full h-full relative">
           <AnimatePresence initial={false}>
             {images.map((imgSrc, index) => {
               if (index === hoverIndex) {
@@ -70,7 +71,7 @@ export function SareeCardSlider({ productSlug, images, name, fabric }: SareeCard
 
       {/* Product Details */}
       <div className="flex flex-col text-center">
-        <Link to={`/product/${productSlug}`} className="group-hover:text-[#D4AF37] transition-colors">
+        <Link to={`/product/${productSlug}`} onClick={scrollToTop} className="group-hover:text-[#D4AF37] transition-colors">
           <h3 className="font-serif text-xl md:text-2xl uppercase tracking-widest mb-2">{name}</h3>
         </Link>
         <p className="text-gray-500 text-xs uppercase tracking-[0.2em]">{fabric}</p>

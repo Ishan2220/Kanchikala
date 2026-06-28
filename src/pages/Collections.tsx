@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
 import categoriesData from "@/data/categories.json";
+import { scrollToTop } from "@/lib/utils";
 
 export default function Collections() {
   return (
@@ -35,11 +36,11 @@ export default function Collections() {
               className={`flex flex-col md:flex-row items-center gap-12 md:gap-24 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
             >
               <div className="w-full md:w-1/2 aspect-[3/4] overflow-hidden group relative">
-                <Link to={`/${category.slug}`} className="relative block w-full h-full cursor-pointer">
+                <Link to={`/${category.slug}`} onClick={scrollToTop} className="relative block w-full h-full cursor-pointer">
                   <img 
                     src={category.coverImage} 
                     alt={category.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-1000"
                   />
                 </Link>
               </div>
@@ -51,6 +52,7 @@ export default function Collections() {
                 </p>
                 <Link 
                   to={`/${category.slug}`}
+                  onClick={scrollToTop}
                   className="group inline-flex items-center gap-4 text-sm uppercase tracking-widest border-b border-black pb-2 hover:text-[#D4AF37] hover:border-[#D4AF37] transition-colors w-fit mx-auto md:mx-0"
                 >
                   Explore Collection <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />

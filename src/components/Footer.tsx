@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin } from "lucide-react";
+import categoriesData from "@/data/categories.json";
+import { scrollToTop } from "@/lib/utils";
 
 export function Footer() {
   return (
@@ -12,7 +14,7 @@ export function Footer() {
           
           {/* Brand Section */}
           <div className="lg:col-span-5 flex flex-col items-center lg:items-start text-center lg:text-left">
-            <Link to="/" className="inline-block mb-8">
+            <Link to="/" onClick={scrollToTop} className="inline-block mb-8">
               <img 
                 src="/images/logo.webp" 
                 alt="KanchiKala" 
@@ -27,10 +29,6 @@ export function Footer() {
                   <span className="sr-only">Instagram</span>
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                </a>
-               <a href="https://facebook.com/kanchikala" target="_blank" rel="noopener noreferrer" className="text-[#D4AF37] hover:text-white transition-colors">
-                  <span className="sr-only">Facebook</span>
-                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-               </a>
             </div>
           </div>
 
@@ -38,21 +36,28 @@ export function Footer() {
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-12 text-center sm:text-left">
             <div>
               <h4 className="font-serif text-sm tracking-[0.2em] uppercase mb-8 text-[#D4AF37]">Collections</h4>
-              <ul className="space-y-5 text-sm font-light text-gray-400">
-                <li><Link to="/banarasi-sarees" className="hover:text-[#D4AF37] transition-colors inline-block relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1px] after:bottom-0 after:left-0 after:bg-[#D4AF37] after:origin-bottom-right after:transition-transform hover:after:scale-x-100 hover:after:origin-bottom-left">Banarasi</Link></li>
-                <li><Link to="/kanjeevaram-sarees" className="hover:text-[#D4AF37] transition-colors inline-block relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1px] after:bottom-0 after:left-0 after:bg-[#D4AF37] after:origin-bottom-right after:transition-transform hover:after:scale-x-100 hover:after:origin-bottom-left">Kanjeevaram</Link></li>
-                <li><Link to="/paithani-sarees" className="hover:text-[#D4AF37] transition-colors inline-block relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1px] after:bottom-0 after:left-0 after:bg-[#D4AF37] after:origin-bottom-right after:transition-transform hover:after:scale-x-100 hover:after:origin-bottom-left">Paithani</Link></li>
-                <li><Link to="/pochampally-ikkat" className="hover:text-[#D4AF37] transition-colors inline-block relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1px] after:bottom-0 after:left-0 after:bg-[#D4AF37] after:origin-bottom-right after:transition-transform hover:after:scale-x-100 hover:after:origin-bottom-left">Pochampally</Link></li>
+              <ul className="space-y-3.5 text-sm font-light text-gray-400">
+                {categoriesData.slice(0, 8).map((category) => (
+                  <li key={category.id}>
+                    <Link 
+                      to={`/${category.slug}`} 
+                      onClick={scrollToTop}
+                      className="hover:text-[#D4AF37] transition-colors inline-block relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1px] after:bottom-0 after:left-0 after:bg-[#D4AF37] after:origin-bottom-right after:transition-transform hover:after:scale-x-100 hover:after:origin-bottom-left truncate max-w-[220px]"
+                    >
+                      {category.name.replace(' Sarees', '').replace(' Edition', '')}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
             <div>
               <h4 className="font-serif text-sm tracking-[0.2em] uppercase mb-8 text-[#D4AF37]">Boutique</h4>
               <ul className="space-y-5 text-sm font-light text-gray-400">
-                <li><a href="/#heritage" className="hover:text-[#D4AF37] transition-colors">Our Heritage</a></li>
-                <li><a href="/#visit-store" className="hover:text-[#D4AF37] transition-colors">Store Location</a></li>
-                <li><a href="/#stylist" className="hover:text-[#D4AF37] transition-colors">Personal Stylist</a></li>
-                <li><Link to="#" className="hover:text-[#D4AF37] transition-colors">Book Appointment</Link></li>
+                <li><a href="/#heritage" onClick={scrollToTop} className="hover:text-[#D4AF37] transition-colors">Our Heritage</a></li>
+                <li><a href="/#visit-store" onClick={scrollToTop} className="hover:text-[#D4AF37] transition-colors">Store Location</a></li>
+                <li><a href="/#stylist" onClick={scrollToTop} className="hover:text-[#D4AF37] transition-colors">Personal Stylist</a></li>
+                <li><a href="https://wa.me/919175954455" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors">Book Appointment</a></li>
               </ul>
             </div>
 

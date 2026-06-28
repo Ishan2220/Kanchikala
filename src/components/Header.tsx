@@ -6,6 +6,7 @@ import { Search, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import categoriesData from "@/data/categories.json";
 import productsData from "@/data/products.json";
+import { scrollToTop } from "@/lib/utils";
 
 export function Header() {
 
@@ -74,7 +75,7 @@ export function Header() {
             </div>
 
             {/* Center: Logo */}
-            <Link to="/" className="flex-1 flex justify-center items-center group py-2">
+            <Link to="/" onClick={scrollToTop} className="flex-1 flex justify-center items-center group py-2">
               <img 
                 src="/images/logo.webp" 
                 alt="KanchiKala" 
@@ -116,7 +117,7 @@ export function Header() {
               transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
               className="fixed top-0 left-0 bottom-0 w-[85vw] sm:w-[450px] bg-[#FEFCF8] z-[70] flex flex-col shadow-[20px_0_40px_rgba(0,0,0,0.1)]"
             >
-              <div className="p-8 flex justify-between items-center bg-[#FEFCF8]">
+              <div className="p-6 sm:p-8 flex justify-between items-center bg-[#FEFCF8]">
                 <img 
                   src="/images/logo.webp" 
                   alt="KanchiKala" 
@@ -129,25 +130,25 @@ export function Header() {
                   <X className="w-7 h-7" strokeWidth={1.5} />
                 </button>
               </div>
-              <div className="flex-1 overflow-y-auto py-8 px-10 flex flex-col justify-center gap-10">
-                <Link onClick={() => setMobileMenuOpen(false)} to="/" className="group flex items-center gap-4">
-                  <span className="text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity text-sm font-medium">01</span>
-                  <span className="text-3xl sm:text-4xl tracking-widest uppercase font-serif text-[#2A2A2A] group-hover:text-[#D4AF37] transition-colors">Home</span>
+              <div className="flex-1 overflow-y-auto py-6 px-6 sm:px-10 flex flex-col justify-center gap-6 sm:gap-10">
+                <Link onClick={() => { setMobileMenuOpen(false); scrollToTop(); }} to="/" className="group flex items-center gap-3 sm:gap-4 py-1">
+                  <span className="text-[#D4AF37] text-xs sm:text-sm font-medium w-6 shrink-0">01</span>
+                  <span className="text-2xl sm:text-4xl tracking-wider sm:tracking-widest uppercase font-serif text-[#2A2A2A] group-hover:text-[#D4AF37] transition-colors truncate">Home</span>
                 </Link>
-                <Link onClick={() => setMobileMenuOpen(false)} to="/collections" className="group flex items-center gap-4">
-                  <span className="text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity text-sm font-medium">02</span>
-                  <span className="text-3xl sm:text-4xl tracking-widest uppercase font-serif text-[#2A2A2A] group-hover:text-[#D4AF37] transition-colors">Collections</span>
+                <Link onClick={() => { setMobileMenuOpen(false); scrollToTop(); }} to="/collections" className="group flex items-center gap-3 sm:gap-4 py-1">
+                  <span className="text-[#D4AF37] text-xs sm:text-sm font-medium w-6 shrink-0">02</span>
+                  <span className="text-2xl sm:text-4xl tracking-wider sm:tracking-widest uppercase font-serif text-[#2A2A2A] group-hover:text-[#D4AF37] transition-colors truncate">Collections</span>
                 </Link>
-                <a onClick={() => setMobileMenuOpen(false)} href="/#heritage" className="group flex items-center gap-4">
-                  <span className="text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity text-sm font-medium">03</span>
-                  <span className="text-3xl sm:text-4xl tracking-widest uppercase font-serif text-[#2A2A2A] group-hover:text-[#D4AF37] transition-colors">Our Story</span>
+                <a onClick={() => { setMobileMenuOpen(false); scrollToTop(); }} href="/#heritage" className="group flex items-center gap-3 sm:gap-4 py-1">
+                  <span className="text-[#D4AF37] text-xs sm:text-sm font-medium w-6 shrink-0">03</span>
+                  <span className="text-2xl sm:text-4xl tracking-wider sm:tracking-widest uppercase font-serif text-[#2A2A2A] group-hover:text-[#D4AF37] transition-colors truncate">Our Story</span>
                 </a>
-                <a onClick={() => setMobileMenuOpen(false)} href="/#visit-store" className="group flex items-center gap-4">
-                  <span className="text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity text-sm font-medium">04</span>
-                  <span className="text-3xl sm:text-4xl tracking-widest uppercase font-serif text-[#2A2A2A] group-hover:text-[#D4AF37] transition-colors">Visit Store</span>
+                <a onClick={() => { setMobileMenuOpen(false); scrollToTop(); }} href="/#visit-store" className="group flex items-center gap-3 sm:gap-4 py-1">
+                  <span className="text-[#D4AF37] text-xs sm:text-sm font-medium w-6 shrink-0">04</span>
+                  <span className="text-2xl sm:text-4xl tracking-wider sm:tracking-widest uppercase font-serif text-[#2A2A2A] group-hover:text-[#D4AF37] transition-colors truncate">Visit Store</span>
                 </a>
               </div>
-              <div className="p-10 border-t border-[#E8E5DF] bg-[#F5F5F0]">
+              <div className="p-6 sm:p-10 border-t border-[#E8E5DF] bg-[#F5F5F0]">
                 <p className="text-xs tracking-widest uppercase text-gray-500 mb-2">Contact Us</p>
                 <p className="text-sm font-serif text-[#2A2A2A] mb-1">+91 96234 46066</p>
                 <p className="text-sm font-serif text-[#2A2A2A]">hello@kanchikala.in</p>
@@ -206,7 +207,7 @@ export function Header() {
                             <Link 
                               key={category.id} 
                               to={`/${category.slug}`}
-                              onClick={() => setSearchOpen(false)}
+                              onClick={() => { setSearchOpen(false); scrollToTop(); }}
                               className="group block"
                             >
                               <div className="aspect-[4/5] overflow-hidden mb-4 bg-gray-100 shadow-sm">
@@ -227,7 +228,7 @@ export function Header() {
                             <Link 
                               key={product.id} 
                               to={`/product/${product.slug}`}
-                              onClick={() => setSearchOpen(false)}
+                              onClick={() => { setSearchOpen(false); scrollToTop(); }}
                               className="group flex gap-5 items-center"
                             >
                               <div className="w-20 h-28 md:w-24 md:h-32 shrink-0 overflow-hidden bg-gray-100 shadow-sm">

@@ -1,8 +1,78 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, MapPin, Clock, Phone, Navigation } from "lucide-react";
 import { motion } from "framer-motion";
 import categoriesData from "@/data/categories.json";
 import { ImageSlider } from "@/components/ImageSlider";
+import { scrollToTop } from "@/lib/utils";
+
+const hoverImages = [
+  "/Hover/hover-1.png",
+  "/Hover/hover-2.png",
+  "/Hover/hover-3.png",
+  "/Hover/hover-4.png",
+  "/Hover/hover-5.png"
+];
+
+function HeroCarousel() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    if (isHovered) return;
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % hoverImages.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [isHovered]);
+
+  return (
+    <div 
+      className="w-full md:w-[45%] h-[75svh] md:h-[85vh] relative order-1 shadow-[0_24px_60px_rgba(0,0,0,0.12)] rounded-2xl overflow-hidden group border border-[#ECE9E2]"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {/* Background stacked images for smooth crossfade */}
+      {hoverImages.map((src, idx) => (
+        <div
+          key={src}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            idx === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+          }`}
+        >
+          <img
+            src={src}
+            alt={`Masterpiece Saree ${idx + 1}`}
+            className="w-full h-full object-cover object-top transition-transform duration-[3000ms] ease-out group-hover:scale-108"
+          />
+          {/* Subtle luxury vignette */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10 opacity-40 group-hover:opacity-20 transition-opacity duration-700"></div>
+        </div>
+      ))}
+
+      {/* Interactive Bottom Progress Indicators */}
+      <div className="absolute bottom-6 inset-x-6 z-20 flex items-center justify-between gap-2">
+        <div className="flex items-center gap-2 flex-1">
+          {hoverImages.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={(e) => {
+                e.stopPropagation();
+                setCurrentIndex(idx);
+              }}
+              className={`h-1.5 rounded-full transition-all duration-500 ${
+                idx === currentIndex
+                  ? "w-8 bg-[#D4AF37] shadow-[0_0_10px_rgba(212,175,55,0.8)]"
+                  : "w-2 bg-white/40 hover:bg-white/80"
+              }`}
+              aria-label={`Go to slide ${idx + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   const topCategories = categoriesData.slice(0, 4);
@@ -14,35 +84,8 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-24">
             
-            {/* Left/Top: Portrait Video */}
-            <div className="w-full md:w-[45%] h-[75svh] md:h-[85vh] relative order-1 shadow-[0_20px_50px_rgba(0,0,0,0.15)] overflow-hidden group">
-              <motion.div 
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 1.5, ease: "easeOut" }}
-                className="w-full h-full relative"
-              >
-                <div className="absolute inset-0 bg-[#E8E5DF] animate-pulse"></div>
-                {/* Note: Upload your video to public/videos/hero-video.mp4 */}
-                <video
-                  src="/videos/hero-video.mp4"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-full object-cover object-center absolute inset-0 z-10 transition-transform duration-1000 group-hover:scale-105"
-                  poster="/images/model.webp"
-                />
-                <div className="absolute inset-0 bg-black/10 z-20 transition-opacity duration-700 group-hover:bg-black/0"></div>
-                
-                {/* Overlay Premium Play effect (Visual only) */}
-                <div className="absolute inset-0 z-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
-                  <div className="w-20 h-20 rounded-full border border-white/50 flex items-center justify-center backdrop-blur-sm">
-                    <div className="w-2 h-2 bg-white rounded-full animate-ping"></div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
+            {/* Left/Top: Portrait Luxury Image Carousel */}
+            <HeroCarousel />
 
             {/* Right/Bottom: Premium Typography & Content */}
             <div className="w-full md:w-[50%] flex flex-col justify-center order-2">
@@ -66,6 +109,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row gap-5">
                   <Link 
                     to="/collections" 
+                    onClick={scrollToTop}
                     className="bg-[#2A2A2A] text-white hover:bg-[#D4AF37] hover:-translate-y-1 hover:shadow-xl px-10 py-5 text-center uppercase tracking-widest text-xs transition-all duration-500"
                   >
                     Explore Collections
@@ -78,27 +122,6 @@ export default function Home() {
                   >
                     Book Appointment
                   </a>
-                </div>
-              </motion.div>
-
-              {/* Floating Stats / Trust badges */}
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.2, ease: "easeOut", delay: 0.6 }}
-                className="mt-12 pt-10 border-t border-[#E8E5DF] grid grid-cols-3 gap-6"
-              >
-                <div className="group cursor-default">
-                  <p className="text-3xl font-serif text-[#D4AF37] mb-1 transition-transform duration-500 group-hover:-translate-y-1">50+</p>
-                  <p className="text-[10px] uppercase tracking-widest text-gray-500 group-hover:text-[#2A2A2A] transition-colors duration-300">Master Weavers</p>
-                </div>
-                <div className="group cursor-default">
-                  <p className="text-3xl font-serif text-[#D4AF37] mb-1 transition-transform duration-500 group-hover:-translate-y-1">100%</p>
-                  <p className="text-[10px] uppercase tracking-widest text-gray-500 group-hover:text-[#2A2A2A] transition-colors duration-300">Pure Silk</p>
-                </div>
-                <div className="group cursor-default">
-                  <p className="text-3xl font-serif text-[#D4AF37] mb-1 transition-transform duration-500 group-hover:-translate-y-1">Authentic</p>
-                  <p className="text-[10px] uppercase tracking-widest text-gray-500 group-hover:text-[#2A2A2A] transition-colors duration-300">Heritage</p>
                 </div>
               </motion.div>
             </div>
@@ -122,12 +145,12 @@ export default function Home() {
                 className={`flex flex-col md:flex-row items-center gap-12 md:gap-24 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
               >
                 <div className="w-full md:w-1/2 aspect-[3/4] overflow-hidden bg-gray-100 group relative">
-                  <Link to={`/${category.slug}`} className="relative block w-full h-full">
+                  <Link to={`/${category.slug}`} onClick={scrollToTop} className="relative block w-full h-full">
                     <img
                       src={category.coverImage}
                       alt={category.name}
                       loading={index === 0 ? "eager" : "lazy"}
-                      className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                      className="w-full h-full object-cover object-top transition-transform duration-1000 group-hover:scale-105"
                     />
                   </Link>
                 </div>
@@ -139,6 +162,7 @@ export default function Home() {
                   </p>
                   <Link 
                     to={`/${category.slug}`}
+                    onClick={scrollToTop}
                     className="group inline-flex items-center gap-4 text-sm uppercase tracking-widest border-b border-black pb-2 hover:text-[#D4AF37] hover:border-[#D4AF37] transition-colors w-fit mx-auto md:mx-0"
                   >
                     Explore Collection <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
@@ -151,6 +175,7 @@ export default function Home() {
           <div className="text-center mt-32">
              <Link 
                 to="/collections" 
+                onClick={scrollToTop}
                 className="bg-transparent border border-black hover:bg-black hover:text-white text-black px-12 py-5 uppercase tracking-widest text-sm transition-all"
               >
                 View All Categories

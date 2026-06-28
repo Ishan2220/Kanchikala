@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { scrollToTop } from "@/lib/utils";
 
 interface CategorySliderProps {
   slug: string;
@@ -58,7 +59,7 @@ export function CategorySlider({ slug, images, name, priority = false }: Categor
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      <Link to={`/${slug}`} className="block w-full h-full relative bg-gray-100">
+      <Link to={`/${slug}`} onClick={scrollToTop} className="block w-full h-full relative bg-gray-100">
         <AnimatePresence initial={false}>
           {images.map((imgSrc, index) => {
             if (index === hoverIndex) {

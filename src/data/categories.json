@@ -3,34 +3,71 @@
     "id": "banarasi",
     "name": "Banarasi Sarees",
     "slug": "banarasi-sarees",
-    "description": "Rich brocade silk woven with Mughal-inspired gold zari motifs from the holy city of Varanasi. Each piece is a masterpiece of Indian handloom heritage, taking weeks to perfect by master artisans.",
-    "shortDescription": "Mughal-inspired gold zari motifs on pure silk from Varanasi.",
-    "coverImage": "/images/categories/banarasi/1.webp",
+    "description": "Renowned for royal Mughal-inspired gold and silver zari brocades, elaborate floral meenakari weaving, and sumptuous pure katan silk. Each piece is an authentic heirloom handwoven in the holy city of Varanasi.",
+    "shortDescription": "Royal Mughal-inspired gold zari brocades on pure katan silk.",
+    "coverImage": "/Banarasi Sarees/ChatGPT Image Jun 25, 2026, 11_31_26 PM.png",
     "images": [
-      "/images/categories/banarasi/1.webp",
-      "/images/categories/banarasi/2.webp",
-      "/images/categories/banarasi/3.webp"
+      "/Banarasi Sarees/ChatGPT Image Jun 25, 2026, 11_31_26 PM.png",
+      "/Banarasi Sarees/ChatGPT Image Jun 25, 2026, 11_32_23 PM.png",
+      "/Banarasi Sarees/ChatGPT Image Jun 25, 2026, 11_33_43 PM.png",
+      "/Banarasi Sarees/ChatGPT Image Jun 25, 2026, 11_37_14 PM.png",
+      "/Banarasi Sarees/ChatGPT Image Jun 25, 2026, 11_41_17 PM.png",
+      "/Banarasi Sarees/ChatGPT Image Jun 25, 2026, 11_46_16 PM.png",
+      "/Banarasi Sarees/ChatGPT Image Jun 25, 2026, 11_53_13 PM.png",
+      "/Banarasi Sarees/ChatGPT Image Jun 25, 2026, 11_57_27 PM.png"
     ]
   },
   {
     "id": "kanjeevaram",
     "name": "Kanjeevaram Sarees",
     "slug": "kanjeevaram-sarees",
-    "description": "The queen of South Indian silks — bold temple borders and lustrous jewel-toned pure mulberry silk.",
+    "description": "The queen of South Indian handlooms, celebrated for bold contrast Korvai temple borders, heavy lustrous mulberry silk, and rich zari pallus. Woven by master artisans in Kanchipuram for unmatched durability and majesty.",
     "shortDescription": "Bold temple borders and lustrous pure mulberry silk.",
-    "coverImage": "/images/categories/kanjeevaram/1.webp",
+    "coverImage": "/Kanjeevaram Sarees/ChatGPT Image Jun 26, 2026, 01_39_22 AM.png",
     "images": [
-      "/images/categories/kanjeevaram/1.webp",
-      "/images/categories/kanjeevaram/2.webp",
-      "/images/categories/kanjeevaram/3.webp"
+      "/Kanjeevaram Sarees/ChatGPT Image Jun 26, 2026, 01_39_22 AM.png",
+      "/Kanjeevaram Sarees/ChatGPT Image Jun 26, 2026, 01_42_01 AM.png",
+      "/Kanjeevaram Sarees/ChatGPT Image Jun 26, 2026, 01_43_44 AM.png",
+      "/Kanjeevaram Sarees/ChatGPT Image Jun 26, 2026, 01_45_42 AM.png",
+      "/Kanjeevaram Sarees/ChatGPT Image Jun 26, 2026, 01_48_48 AM.png",
+      "/Kanjeevaram Sarees/ChatGPT Image Jun 26, 2026, 01_50_20 AM.png",
+      "/Kanjeevaram Sarees/ChatGPT Image Jun 26, 2026, 01_52_00 AM.png",
+      "/Kanjeevaram Sarees/ChatGPT Image Jun 26, 2026, 12_50_29 AM.png",
+      "/Kanjeevaram Sarees/ChatGPT Image Jun 26, 2026, 12_53_45 AM.png"
+    ]
+  },
+  {
+    "id": "kanjeevaram-2gm-gold",
+    "name": "Kanjeevaram 2 Gram Gold Edition",
+    "folderName": "Kanjeevaram 2gm Gold Sarees",
+    "slug": "kanjeevaram-2gm-gold-edition",
+    "description": "An exclusive showcase of royal Kanjeevaram sarees handwoven with genuine 2-gram gold dipped zari threads. Designed for grand bridal receptions and connoisseurs seeking pure luxury and timeless heirloom value.",
+    "shortDescription": "Lustrous temple silks handwoven with authentic 2-gram gold zari.",
+    "coverImage": "/Kanjeevaram 2gm Gold Sarees/ChatGPT Image Jun 27, 2026, 12_04_11 AM.png",
+    "images": [
+      "/Kanjeevaram 2gm Gold Sarees/ChatGPT Image Jun 27, 2026, 12_04_11 AM.png",
+      "/Kanjeevaram 2gm Gold Sarees/ChatGPT Image Jun 27, 2026, 12_07_11 AM.png"
+    ]
+  },
+  {
+    "id": "kanjeevaram-pure-silver",
+    "name": "Kanjeevaram Pure Silver Edition",
+    "folderName": "Kanjeevaram Pure Silver Sarees",
+    "slug": "kanjeevaram-pure-silver-edition",
+    "description": "A magnificent fusion of traditional Kanjeevaram weaving with pure tested silver zari motifs. Known for its sophisticated metallic luster, intricate zari brocade, and dignified drape.",
+    "shortDescription": "Handwoven Kanjeevarams featuring genuine pure silver zari motifs.",
+    "coverImage": "/Kanjeevaram Pure Silver Sarees/ChatGPT Image Jun 27, 2026, 12_15_27 AM.png",
+    "images": [
+      "/Kanjeevaram Pure Silver Sarees/ChatGPT Image Jun 27, 2026, 12_15_27 AM.png",
+      "/Kanjeevaram Pure Silver Sarees/ChatGPT Image Jun 27, 2026, 12_17_21 AM.png"
     ]
   },
   {
     "id": "pochampally",
     "name": "Pochampally Ikkat",
     "slug": "pochampally-ikkat",
-    "description": "Mesmerizing geometric patterns born from the ancient resist-dye weaving technique of Telangana.",
-    "shortDescription": "Ancient resist-dye weaving with geometric patterns.",
+    "description": "Famous for mesmerizing geometric double-ikkat patterns where yarn is resist-dyed before weaving. Woven in Bhoodan Pochampally, these sarees offer a distinct visual rhythm and feather-light drape.",
+    "shortDescription": "Intricate geometric double-ikkat patterns with feather-light drape.",
     "coverImage": "/images/categories/pochampally/1.webp",
     "images": [
       "/images/categories/pochampally/1.webp",
@@ -42,8 +79,8 @@
     "id": "bandhani",
     "name": "Bandhani Sarees",
     "slug": "bandhani-sarees",
-    "description": "A thousand tiny knots blooming into vibrant patterns — the timeless tie-dye art of Rajasthan and Gujarat.",
-    "shortDescription": "The timeless tie-dye art of Rajasthan and Gujarat.",
+    "description": "Crafted using the ancient tie-and-dye technique of Gujarat and Rajasthan, featuring thousands of intricate hand-tied knots that create delicate geometric and floral patterns on flowing silk.",
+    "shortDescription": "Intricate artisanal tie-and-dye patterns on flowing luxury silk.",
     "coverImage": "/images/categories/bandhani/1.webp",
     "images": [
       "/images/categories/bandhani/1.webp",
@@ -55,8 +92,8 @@
     "id": "leheriya",
     "name": "Leheriya Sarees",
     "slug": "leheriya-sarees",
-    "description": "Waves of colour cascading diagonally — Rajasthan's joyful resist-dye craft in soft pastel hues.",
-    "shortDescription": "Rajasthan's joyful resist-dye craft in pastel hues.",
+    "description": "Distinctive diagonal wave patterns created through traditional Rajasthani resist-dyeing techniques. Celebrated for dynamic visual flow, feather-light weight, and graceful movement.",
+    "shortDescription": "Distinctive diagonal wave patterns with dynamic flow and lightness.",
     "coverImage": "/images/categories/leheriya/1.webp",
     "images": [
       "/images/categories/leheriya/1.webp",
@@ -68,47 +105,73 @@
     "id": "paithani",
     "name": "Paithani Sarees",
     "slug": "paithani-sarees",
-    "description": "Maharashtra's crown jewel — handwoven silk adorned with dancing peacocks and oblique square borders.",
-    "shortDescription": "Handwoven silk adorned with dancing peacocks.",
-    "coverImage": "/images/categories/paithani/1.webp",
+    "description": "A pride of Maharashtra, characterized by oblique square borders and majestic peacock or lotus motif pallus woven in pure gold zari. Crafted with tapestry weaving techniques without reverse float threads.",
+    "shortDescription": "Tapestry-woven peacock and lotus zari pallus from Maharashtra.",
+    "coverImage": "/Paithani Sarees/ChatGPT Image Jun 27, 2026, 02_39_12 AM.png",
     "images": [
-      "/images/categories/paithani/1.webp",
-      "/images/categories/paithani/2.webp",
-      "/images/categories/paithani/3.webp"
+      "/Paithani Sarees/ChatGPT Image Jun 27, 2026, 02_39_12 AM.png",
+      "/Paithani Sarees/ChatGPT Image Jun 27, 2026, 02_39_24 AM.png",
+      "/Paithani Sarees/ChatGPT Image Jun 27, 2026, 02_39_32 AM.png",
+      "/Paithani Sarees/ChatGPT Image Jun 27, 2026, 02_39_39 AM.png",
+      "/Paithani Sarees/ChatGPT Image Jun 27, 2026, 02_39_57 AM.png"
+    ]
+  },
+  {
+    "id": "gadwal",
+    "name": "Gadwal Sarees",
+    "folderName": "Gadwal Sarees",
+    "slug": "gadwal-sarees",
+    "description": "Renowned for their unique Kuttu technique combining a breathable cotton body with rich contrasting pure silk zari borders and pallu. Offers supreme comfort without compromising on ceremonial grandeur.",
+    "shortDescription": "Lightweight cotton body with contrasting rich pure silk zari borders.",
+    "coverImage": "/Gadwal Sarees/ChatGPT Image Jun 27, 2026, 11_07_54 PM.png",
+    "images": [
+      "/Gadwal Sarees/ChatGPT Image Jun 27, 2026, 11_07_54 PM.png",
+      "/Gadwal Sarees/ChatGPT Image Jun 27, 2026, 11_11_01 PM.png",
+      "/Gadwal Sarees/ChatGPT Image Jun 27, 2026, 11_12_14 PM.png",
+      "/Gadwal Sarees/ChatGPT Image Jun 27, 2026, 11_14_06 PM.png",
+      "/Gadwal Sarees/ChatGPT Image Jun 27, 2026, 11_15_19 PM.png",
+      "/Gadwal Sarees/ChatGPT Image Jun 27, 2026, 11_17_01 PM.png"
     ]
   },
   {
     "id": "chanderi",
     "name": "Chanderi Sarees",
     "slug": "chanderi-sarees",
-    "description": "Ethereal and light as air — sheer silk-cotton fabric from Madhya Pradesh with delicate golden zari borders.",
-    "shortDescription": "Sheer silk-cotton fabric with delicate golden zari.",
-    "coverImage": "/images/categories/chanderi/1.webp",
+    "description": "Known for their sheer texture, lightweight luxury, and glossy transparency known as 'woven air'. Adorned with delicate zari motifs like swans, gold coins, and florals inspired by nature.",
+    "shortDescription": "Sheer woven air texture adorned with delicate traditional buttis.",
+    "coverImage": "/Chanderi Sarees/ChatGPT Image Jun 27, 2026, 11_24_49 PM.png",
     "images": [
-      "/images/categories/chanderi/1.webp",
-      "/images/categories/chanderi/2.webp",
-      "/images/categories/chanderi/3.webp"
-    ]
+      "/Chanderi Sarees/ChatGPT Image Jun 27, 2026, 11_24_49 PM.png",
+      "/Chanderi Sarees/ChatGPT Image Jun 27, 2026, 11_27_37 PM.png",
+      "/Chanderi Sarees/ChatGPT Image Jun 27, 2026, 11_29_12 PM.png",
+      "/Chanderi Sarees/ChatGPT Image Jun 27, 2026, 11_36_56 PM.png",
+      "/Chanderi Sarees/ChatGPT Image Jun 27, 2026, 11_45_25 PM.png"
+    ],
+    "folderName": "Chanderi Sarees"
   },
   {
     "id": "maheshwari",
     "name": "Maheshwari Sarees",
     "slug": "maheshwari-sarees",
-    "description": "A royal patronage since the Holkar dynasty — distinctive reversible borders in cotton-silk perfection.",
-    "shortDescription": "Distinctive reversible borders in cotton-silk.",
-    "coverImage": "/images/categories/maheshwari/1.webp",
+    "description": "Originating from the royal town of Maheshwar, featuring distinctive reversible borders (Bugdi), sophisticated stripes or checks, and a unique pallu with five elegant bands.",
+    "shortDescription": "Distinctive reversible Bugdi borders and elegant zari stripe pallus.",
+    "coverImage": "/Maheshwari Sarees/ChatGPT Image Jun 27, 2026, 01_23_45 AM.png",
     "images": [
-      "/images/categories/maheshwari/1.webp",
-      "/images/categories/maheshwari/2.webp",
-      "/images/categories/maheshwari/3.webp"
+      "/Maheshwari Sarees/ChatGPT Image Jun 27, 2026, 01_23_45 AM.png",
+      "/Maheshwari Sarees/ChatGPT Image Jun 27, 2026, 01_33_40 AM.png",
+      "/Maheshwari Sarees/ChatGPT Image Jun 27, 2026, 01_35_34 AM.png",
+      "/Maheshwari Sarees/ChatGPT Image Jun 27, 2026, 01_40_31 AM.png",
+      "/Maheshwari Sarees/ChatGPT Image Jun 27, 2026, 02_37_25 AM.png",
+      "/Maheshwari Sarees/ChatGPT Image Jun 27, 2026, 12_26_17 AM.png",
+      "/Maheshwari Sarees/ChatGPT Image Jun 27, 2026, 12_31_35 AM.png"
     ]
   },
   {
     "id": "muga-silk",
     "name": "Muga Silk Sarees",
     "slug": "muga-silk-sarees",
-    "description": "Assam's golden treasure — the only naturally golden silk in the world, glowing brighter with every wash.",
-    "shortDescription": "Assam's naturally golden silk, growing brighter with age.",
+    "description": "Woven from rare wild Assam silk known for its natural extreme luster and durability that actually increases after every wash. A symbol of royalty and pride of Assamese heritage.",
+    "shortDescription": "Rare natural golden glow Assam silk with legendary durability.",
     "coverImage": "/images/categories/muga-silk/1.webp",
     "images": [
       "/images/categories/muga-silk/1.webp",
@@ -120,8 +183,8 @@
     "id": "dharmavaram",
     "name": "Dharmavaram Sarees",
     "slug": "dharmavaram-sarees",
-    "description": "Andhra Pradesh's bridal favourite — rich heavy silk with dramatically contrasting pallu and wide temple borders.",
-    "shortDescription": "Rich heavy silk with dramatically contrasting pallus.",
+    "description": "Famed for broad solid borders and elaborate brocade patterns woven in heavy mulberry silk. Features striking contrast pallus and intricate temple designs inspired by South Indian architecture.",
+    "shortDescription": "Broad solid brocade borders and elaborate heavy zari weaves.",
     "coverImage": "/images/categories/dharmavaram/1.webp",
     "images": [
       "/images/categories/dharmavaram/1.webp",
@@ -133,8 +196,8 @@
     "id": "georgette",
     "name": "Georgette Sarees",
     "slug": "georgette-sarees",
-    "description": "Contemporary elegance in flowing lightweight fabric — modern prints and delicate embellishments for the new-age woman.",
-    "shortDescription": "Contemporary elegance in flowing lightweight fabric.",
+    "description": "Crafted from highly twisted yarns creating a sheer, lightweight crepe texture with exquisite fluidity and bounce. Perfect for contemporary silhouettes and effortless draping.",
+    "shortDescription": "Sheer fluid crepe texture with effortless drape and bounce.",
     "coverImage": "/images/categories/georgette/1.webp",
     "images": [
       "/images/categories/georgette/1.webp",
@@ -146,8 +209,8 @@
     "id": "chiffon",
     "name": "Chiffon Sarees",
     "slug": "chiffon-sarees",
-    "description": "Ultra-lightweight, sheer, and gracefully flowing. Perfect for evening wear and elegant minimalist looks.",
-    "shortDescription": "Ultra-lightweight, sheer, and gracefully flowing.",
+    "description": "Celebrated for feather-light softness, sheer elegance, and graceful fluidity. Adorned with subtle zari work or fine borders, offering unmatched comfort and modern sophistication.",
+    "shortDescription": "Feather-light softness with graceful fluidity and sheer elegance.",
     "coverImage": "/images/categories/chiffon/1.webp",
     "images": [
       "/images/categories/chiffon/1.webp",

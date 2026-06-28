@@ -63,7 +63,7 @@ export default function ProductPage() {
                   src={image}
                   alt={`${product.name} View ${index + 1}`}
                   loading={index === 0 ? "eager" : "lazy"}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             ))}
