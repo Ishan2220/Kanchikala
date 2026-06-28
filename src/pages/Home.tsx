@@ -7,11 +7,11 @@ import { ImageSlider } from "@/components/ImageSlider";
 import { scrollToTop } from "@/lib/utils";
 
 const hoverImages = [
-  "/Hover/hover-1.png",
-  "/Hover/hover-2.png",
-  "/Hover/hover-3.png",
-  "/Hover/hover-4.png",
-  "/Hover/hover-5.png"
+  "/Hover/hover-1.webp",
+  "/Hover/hover-2.webp",
+  "/Hover/hover-3.webp",
+  "/Hover/hover-4.webp",
+  "/Hover/hover-5.webp"
 ];
 
 function HeroCarousel() {
