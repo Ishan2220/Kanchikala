@@ -54,11 +54,6 @@ export default function AdminPage() {
   const [passwordInput, setPasswordInput] = useState("");
   const [loginError, setLoginError] = useState("");
 
-  const [isPublishing, setIsPublishing] = useState(false);
-  const [publishMessage, setPublishMessage] = useState("");
-  const [gitHubToken, setGitHubToken] = useState(() => localStorage.getItem("kanchikala_github_token") || "");
-  const [showPublishModal, setShowPublishModal] = useState(false);
-
   const {
     categories,
     products,
@@ -313,13 +308,10 @@ export default function AdminPage() {
             </div>
 
             <div className="flex flex-wrap gap-3">
-              <button
-                onClick={() => setShowPublishModal(true)}
-                className="inline-flex items-center gap-2 bg-[#D4AF37] hover:bg-[#c29e2f] text-black font-semibold px-4 py-2.5 rounded-lg text-xs uppercase tracking-widest transition-colors shadow-lg shadow-[#D4AF37]/10"
-              >
-                <Globe className="w-4 h-4 text-black" />
-                Publish Live to Web
-              </button>
+              <div className="inline-flex items-center gap-2 bg-emerald-950/40 border border-emerald-800/50 px-4 py-2.5 rounded-lg text-xs uppercase tracking-widest text-emerald-400 font-medium">
+                <Globe className="w-4 h-4 animate-pulse" />
+                Live Cloud Sync Active
+              </div>
               <button
                 onClick={exportCatalog}
                 className="inline-flex items-center gap-2 bg-[#1A1A1A] hover:bg-[#2A2A2A] text-white border border-[#333333] px-4 py-2.5 rounded-lg text-xs uppercase tracking-widest transition-colors"
@@ -842,132 +834,6 @@ export default function AdminPage() {
                 </button>
               </div>
             </form>
-          </div>
-        </div>
-      )}
-
-      {/* Publish Live Modal */}
-      {showPublishModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-          <div className="bg-[#141414] border border-[#333333] rounded-2xl p-6 max-w-md w-full shadow-2xl">
-            <div className="flex justify-between items-center pb-4 border-b border-[#222222] mb-4">
-              <div className="flex items-center gap-2 text-[#D4AF37]">
-                <Globe className="w-5 h-5" />
-                <h3 className="font-serif text-lg text-white">Publish to Live Website</h3>
-              </div>
-              <button onClick={() => !isPublishing && setShowPublishModal(false)} className="text-gray-400 hover:text-white">
-                <X className="w-5 h-5" />
-              </button>
-            </div>
-
-            <p className="text-xs text-gray-300 leading-relaxed mb-4">
-              To broadcast your catalog changes so <strong className="text-white">everyone on the web sees them immediately</strong>, enter your GitHub Personal Access Token (PAT) with repo permissions for <code className="text-[#D4AF37]">Ishan2220/Kanchikala</code>.
-            </p>
-
-            <div className="mb-5">
-              <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">GitHub Token</label>
-              <input
-                type="password"
-                placeholder="ghp_xxxx..."
-                value={gitHubToken}
-                onChange={(e) => setGitHubToken(e.target.value)}
-                disabled={isPublishing}
-                className="w-full bg-[#1A1A1A] border border-[#333333] rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-[#D4AF37]"
-              />
-              <p className="text-[10px] text-gray-500 mt-1">Saved locally in your browser for future syncs.</p>
-            </div>
-
-            {publishMessage && (
-              <div className="mb-4 p-3 rounded-lg bg-[#1A1A1A] border border-[#333333] text-xs text-center text-[#D4AF37]">
-                {publishMessage}
-              </div>
-            )}
-
-            <div className="flex justify-end gap-3">
-              <button
-                type="button"
-                disabled={isPublishing}
-                onClick={() => setShowPublishModal(false)}
-                className="px-4 py-2 bg-[#222222] hover:bg-[#333333] text-white rounded-lg text-xs uppercase tracking-widest disabled:opacity-50"
-              >
-                Cancel
-              </button>
-              <button
-                type="button"
-                disabled={isPublishing}
-                onClick={async () => {
-                  if (!gitHubToken) {
-                    alert("Please enter a valid GitHub Token.");
-                    return;
-                  }
-                  setIsPublishing(true);
-                  setPublishMessage("Connecting to GitHub API...");
-                  localStorage.setItem("kanchikala_github_token", gitHubToken);
-
-                  const REPO_OWNER = "Ishan2220";
-                  const REPO_NAME = "Kanchikala";
-                  const BRANCH = "main";
-
-                  try {
-                    const updateGitHubFile = async (path: string, contentObj: any, commitMsg: string) => {
-                      const getUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${path}?ref=${BRANCH}`;
-                      const headers = {
-                        Authorization: `token ${gitHubToken}`,
-                        Accept: "application/vnd.github.v3+json",
-                        "Content-Type": "application/json",
-                      };
-
-                      const getRes = await fetch(getUrl, { headers });
-                      let sha: string | undefined;
-                      if (getRes.ok) {
-                        const getJson = await getRes.json();
-                        sha = getJson.sha;
-                      }
-
-                      const contentStr = JSON.stringify(contentObj, null, 2);
-                      const base64Content = btoa(unescape(encodeURIComponent(contentStr)));
-
-                      const putUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${path}`;
-                      const putRes = await fetch(putUrl, {
-                        method: "PUT",
-                        headers,
-                        body: JSON.stringify({
-                          message: commitMsg,
-                          content: base64Content,
-                          branch: BRANCH,
-                          ...(sha ? { sha } : {}),
-                        }),
-                      });
-
-                      if (!putRes.ok) {
-                        const errData = await putRes.json();
-                        throw new Error(`Failed to update ${path}: ${errData.message || putRes.statusText}`);
-                      }
-                    };
-
-                    setPublishMessage("Publishing categories to repository...");
-                    await updateGitHubFile("src/data/categories.json", categories, "Admin update: categories catalog");
-
-                    setPublishMessage("Publishing products to repository...");
-                    await updateGitHubFile("src/data/products.json", products, "Admin update: products catalog");
-
-                    setPublishMessage("🎉 Successfully published! Live website will reflect changes shortly.");
-                    setTimeout(() => {
-                      setShowPublishModal(false);
-                      setIsPublishing(false);
-                      setPublishMessage("");
-                    }, 3000);
-                  } catch (error: any) {
-                    console.error("Publish error:", error);
-                    setPublishMessage(`❌ Error: ${error.message || "Failed to publish"}`);
-                    setIsPublishing(false);
-                  }
-                }}
-                className="px-5 py-2 bg-[#D4AF37] hover:bg-[#c29e2f] text-black font-semibold rounded-lg text-xs uppercase tracking-widest disabled:opacity-50"
-              >
-                {isPublishing ? "Publishing..." : "Publish Now"}
-              </button>
-            </div>
           </div>
         </div>
       )}

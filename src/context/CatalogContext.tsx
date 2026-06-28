@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useState, useEffect, useRef } from "react";
 import initialCategories from "@/data/categories.json";
 import initialProducts from "@/data/products.json";
 
@@ -44,8 +44,11 @@ const CatalogContext = createContext<CatalogContextType | undefined>(undefined);
 
 const CATEGORIES_KEY = "kanchikala_categories_v1";
 const PRODUCTS_KEY = "kanchikala_products_v1";
+const CLOUD_DB_URL = "https://jsonblob.com/api/jsonBlob/019f0fd0-796d-79f8-aa8d-3b69d7aadf8d";
 
 export function CatalogProvider({ children }: { children: React.ReactNode }) {
+  const isCloudLoadedRef = useRef(false);
+
   const [categories, setCategories] = useState<Category[]>(() => {
     try {
       const saved = localStorage.getItem(CATEGORIES_KEY);
@@ -66,22 +69,38 @@ export function CatalogProvider({ children }: { children: React.ReactNode }) {
     return initialProducts as Product[];
   });
 
-  // Save to localStorage whenever state changes
+  // Fetch live catalog from cloud database on startup
+  useEffect(() => {
+    fetch(CLOUD_DB_URL)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data && Array.isArray(data.categories) && Array.isArray(data.products)) {
+          setCategories(data.categories);
+          setProducts(data.products);
+          isCloudLoadedRef.current = true;
+        }
+      })
+      .catch((err) => console.log("Using local offline cache:", err));
+  }, []);
+
+  // Save to localStorage and auto-sync live to cloud DB whenever catalog changes
   useEffect(() => {
     try {
       localStorage.setItem(CATEGORIES_KEY, JSON.stringify(categories));
-    } catch (e) {
-      console.error("Failed to save categories to localStorage", e);
-    }
-  }, [categories]);
-
-  useEffect(() => {
-    try {
       localStorage.setItem(PRODUCTS_KEY, JSON.stringify(products));
+
+      // Automatically push edits to live cloud database if admin is modifying
+      if (sessionStorage.getItem("kanchikala_admin_logged_in") === "true") {
+        fetch(CLOUD_DB_URL, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify({ categories, products }),
+        }).catch((e) => console.error("Cloud sync error:", e));
+      }
     } catch (e) {
-      console.error("Failed to save products to localStorage", e);
+      console.error("Failed to save storage", e);
     }
-  }, [products]);
+  }, [categories, products]);
 
   const addCategory = (catData: Omit<Category, "id" | "slug"> & { id?: string; slug?: string }) => {
     const slug = catData.slug || catData.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
