@@ -57,7 +57,7 @@ export default function CategoryPage() {
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#9A845A 1px, transparent 1px)', backgroundSize: '48px 48px' }}></div>
       
       <Helmet>
-        <title>{category.name} | KanchiKala Sarees</title>
+        <title>{category.name} | KanchiKala - The House of Sarees</title>
         <meta name="description" content={category.description} />
       </Helmet>
 

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useCatalog } from "@/context/CatalogContext";
 import { ImageSlider } from "@/components/ImageSlider";
 import { scrollToTop } from "@/lib/utils";
+import { Helmet } from "react-helmet-async";
 
 const hoverImages = [
   "/Hover/hover-1.webp",
@@ -80,6 +81,10 @@ export default function Home() {
 
   return (
     <>
+      <Helmet>
+        <title>KanchiKala - The House of Sarees | Luxury Authentic Sarees in Kolhapur</title>
+        <meta name="description" content="Discover authentic handwoven luxury sarees at KanchiKala - The House of Sarees in Rajarampuri, Kolhapur. Explore Banarasi, Kanjeevaram, Paithani, Gadwal, Chanderi, and Maheshwari pure silk sarees." />
+      </Helmet>
       {/* Editorial Video Hero Section */}
       <section className="relative min-h-[100svh] w-full bg-[#FEFCF8] pt-20 md:pt-28 pb-12 overflow-hidden flex items-center">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

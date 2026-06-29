@@ -49,7 +49,7 @@ export default function ProductPage() {
   return (
     <div className="pt-24 pb-32 bg-[#FEFCF8] min-h-screen">
       <Helmet>
-        <title>{product.name} | KanchiKala Sarees</title>
+        <title>{product.name} | KanchiKala - The House of Sarees</title>
         <meta name="description" content={product.description} />
       </Helmet>
 

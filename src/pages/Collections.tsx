@@ -13,8 +13,8 @@ export default function Collections() {
       <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#D4AF37 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
       
       <Helmet>
-        <title>Collections | KanchiKala Sarees</title>
-        <meta name="description" content="Explore our luxurious collections of Banarasi, Kanjeevaram, and pure silk sarees." />
+        <title>Collections | KanchiKala - The House of Sarees</title>
+        <meta name="description" content="Explore our luxurious collections of Banarasi, Kanjeevaram, Paithani, Gadwal, Chanderi, and Maheshwari pure silk sarees." />
       </Helmet>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
