@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
+import { execSync } from 'child_process';
 
 async function convertDirectory(dir) {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -9,6 +10,9 @@ async function convertDirectory(dir) {
     if (entry.isDirectory()) {
       await convertDirectory(fullPath);
     } else if (entry.isFile() && /\.(png|jpg|jpeg)$/i.test(entry.name)) {
+      if (entry.name.startsWith('favicon') || entry.name.startsWith('apple-touch-icon')) {
+        continue;
+      }
       const ext = path.extname(entry.name);
       const webpPath = fullPath.slice(0, -ext.length) + '.webp';
       
@@ -51,6 +55,7 @@ async function main() {
   console.log('Conversion finished. Updating code references...');
   await updateReferences(path.resolve('src'));
   console.log('Running sync script...');
+  execSync('npm run sync', { stdio: 'inherit' });
 }
 
 main().catch(console.error);
