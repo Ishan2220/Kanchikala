@@ -42,8 +42,8 @@ interface CatalogContextType {
 
 const CatalogContext = createContext<CatalogContextType | undefined>(undefined);
 
-const CATEGORIES_KEY = "kanchikala_categories_v2";
-const PRODUCTS_KEY = "kanchikala_products_v2";
+const CATEGORIES_KEY = "kanchikala_categories_admin";
+const PRODUCTS_KEY = "kanchikala_products_admin";
 const CLOUD_DB_URL = "https://jsonblob.com/api/jsonBlob/019f0fd0-796d-79f8-aa8d-3b69d7aadf8d";
 
 export function CatalogProvider({ children }: { children: React.ReactNode }) {
@@ -51,58 +51,58 @@ export function CatalogProvider({ children }: { children: React.ReactNode }) {
 
   const [categories, setCategories] = useState<Category[]>(() => {
     try {
-      localStorage.removeItem("kanchikala_categories_v1");
-      const saved = localStorage.getItem(CATEGORIES_KEY);
-      if (saved) {
-        const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length >= initialCategories.length) {
-          return parsed;
-        }
+      // Clear any old customer-side caches so regular visitors ALWAYS load the newly compiled GitHub data
+      if (typeof window !== "undefined" && sessionStorage.getItem("kanchikala_admin_logged_in") !== "true") {
+        localStorage.removeItem("kanchikala_categories_v1");
+        localStorage.removeItem("kanchikala_categories_v2");
+        return initialCategories as Category[];
       }
+      const saved = localStorage.getItem(CATEGORIES_KEY);
+      if (saved) return JSON.parse(saved);
     } catch (e) {
-      console.error("Failed to load categories from localStorage", e);
+      console.error("Failed to load categories", e);
     }
     return initialCategories as Category[];
   });
 
   const [products, setProducts] = useState<Product[]>(() => {
     try {
-      localStorage.removeItem("kanchikala_products_v1");
-      const saved = localStorage.getItem(PRODUCTS_KEY);
-      if (saved) {
-        const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length >= initialProducts.length) {
-          return parsed;
-        }
+      if (typeof window !== "undefined" && sessionStorage.getItem("kanchikala_admin_logged_in") !== "true") {
+        localStorage.removeItem("kanchikala_products_v1");
+        localStorage.removeItem("kanchikala_products_v2");
+        return initialProducts as Product[];
       }
+      const saved = localStorage.getItem(PRODUCTS_KEY);
+      if (saved) return JSON.parse(saved);
     } catch (e) {
-      console.error("Failed to load products from localStorage", e);
+      console.error("Failed to load products", e);
     }
     return initialProducts as Product[];
   });
 
-  // Fetch live catalog from cloud database on startup
+  // Only fetch cloud DB if admin is actively logged in
   useEffect(() => {
-    fetch(CLOUD_DB_URL)
-      .then((res) => (res.ok ? res.json() : null))
-      .then((data) => {
-        if (data && Array.isArray(data.categories) && Array.isArray(data.products)) {
-          setCategories(data.categories);
-          setProducts(data.products);
-          isCloudLoadedRef.current = true;
-        }
-      })
-      .catch((err) => console.log("Using local offline cache:", err));
+    if (typeof window !== "undefined" && sessionStorage.getItem("kanchikala_admin_logged_in") === "true") {
+      fetch(CLOUD_DB_URL)
+        .then((res) => (res.ok ? res.json() : null))
+        .then((data) => {
+          if (data && Array.isArray(data.categories) && Array.isArray(data.products)) {
+            setCategories(data.categories);
+            setProducts(data.products);
+            isCloudLoadedRef.current = true;
+          }
+        })
+        .catch((err) => console.log("Using local offline cache:", err));
+    }
   }, []);
 
-  // Save to localStorage and auto-sync live to cloud DB whenever catalog changes
+  // Save to storage only when admin is modifying
   useEffect(() => {
     try {
-      localStorage.setItem(CATEGORIES_KEY, JSON.stringify(categories));
-      localStorage.setItem(PRODUCTS_KEY, JSON.stringify(products));
+      if (typeof window !== "undefined" && sessionStorage.getItem("kanchikala_admin_logged_in") === "true") {
+        localStorage.setItem(CATEGORIES_KEY, JSON.stringify(categories));
+        localStorage.setItem(PRODUCTS_KEY, JSON.stringify(products));
 
-      // Automatically push edits to live cloud database if admin is modifying
-      if (sessionStorage.getItem("kanchikala_admin_logged_in") === "true") {
         fetch(CLOUD_DB_URL, {
           method: "PUT",
           headers: { "Content-Type": "application/json", "Accept": "application/json" },
