@@ -42,8 +42,8 @@ interface CatalogContextType {
 
 const CatalogContext = createContext<CatalogContextType | undefined>(undefined);
 
-const CATEGORIES_KEY = "kanchikala_categories_v1";
-const PRODUCTS_KEY = "kanchikala_products_v1";
+const CATEGORIES_KEY = "kanchikala_categories_v2";
+const PRODUCTS_KEY = "kanchikala_products_v2";
 const CLOUD_DB_URL = "https://jsonblob.com/api/jsonBlob/019f0fd0-796d-79f8-aa8d-3b69d7aadf8d";
 
 export function CatalogProvider({ children }: { children: React.ReactNode }) {
@@ -51,8 +51,14 @@ export function CatalogProvider({ children }: { children: React.ReactNode }) {
 
   const [categories, setCategories] = useState<Category[]>(() => {
     try {
+      localStorage.removeItem("kanchikala_categories_v1");
       const saved = localStorage.getItem(CATEGORIES_KEY);
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length >= initialCategories.length) {
+          return parsed;
+        }
+      }
     } catch (e) {
       console.error("Failed to load categories from localStorage", e);
     }
@@ -61,8 +67,14 @@ export function CatalogProvider({ children }: { children: React.ReactNode }) {
 
   const [products, setProducts] = useState<Product[]>(() => {
     try {
+      localStorage.removeItem("kanchikala_products_v1");
       const saved = localStorage.getItem(PRODUCTS_KEY);
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length >= initialProducts.length) {
+          return parsed;
+        }
+      }
     } catch (e) {
       console.error("Failed to load products from localStorage", e);
     }
