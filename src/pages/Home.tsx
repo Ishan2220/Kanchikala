@@ -8,11 +8,21 @@ import { scrollToTop } from "@/lib/utils";
 import { Helmet } from "react-helmet-async";
 
 const hoverImages = [
-  "/Hover/hover-1.webp",
-  "/Hover/hover-2.webp",
-  "/Hover/hover-3.webp",
-  "/Hover/hover-4.webp",
-  "/Hover/hover-5.webp"
+  "/Hover/new-hover-1.webp",
+  "/Hover/new-hover-2.webp",
+  "/Hover/new-hover-3.webp",
+  "/Hover/new-hover-4.webp",
+  "/Hover/new-hover-5.webp",
+  "/Hover/new-hover-6.webp",
+  "/Hover/new-hover-7.webp",
+  "/Hover/new-hover-8.webp",
+  "/Hover/new-hover-9.webp",
+  "/Hover/new-hover-10.webp",
+  "/Hover/new-hover-11.webp",
+  "/Hover/new-hover-12.webp",
+  "/Hover/new-hover-13.webp",
+  "/Hover/new-hover-14.webp",
+  "/Hover/new-hover-15.webp"
 ];
 
 function HeroCarousel() {
